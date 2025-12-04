@@ -78,6 +78,30 @@ https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230011C.pdf
   dir=NGS_Panels
   out=TruSight_Oncology_Comprehensive_P230011_Technical_Info.pdf
 
+https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240010B.pdf
+  dir=NGS_Panels
+  out=MI_Cancer_Seek_P240010_SSED.pdf
+
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160018S001b.pdf
+  dir=NGS_Panels
+  out=FoundationFocus_CDxBRCA_P160018_S001_SSED.pdf
+
+https://www.accessdata.fda.gov/cdrh_docs/reviews/den170058.pdf
+  dir=NGS_Panels
+  out=MSK-IMPACT_DEN170058_De_Novo_Summary.pdf
+
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038B.pdf
+  dir=NGS_Panels
+  out=Praxis_Extended_RAS_Panel_P160038_SSED.pdf
+
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/p160038c.pdf
+  dir=NGS_Panels
+  out=Praxis_Extended_RAS_Panel_P160038_Technical_Info.pdf
+
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200011S001B.pdf
+  dir=NGS_Panels
+  out=oncoReveal_CDx_P200011_S001_SSED.pdf
+
 # PCR Companion Diagnostics
 https://www.accessdata.fda.gov/cdrh_docs/pdf11/P110020b.pdf
   dir=PCR_Companion_Diagnostics
@@ -195,7 +219,7 @@ echo ""
 
 # Count downloaded files
 total_files=$(find . -name "*.pdf" -type f | wc -l)
-echo -e "${BLUE}[INFO] Total PDF files downloaded: ${total_files}${NC}"
+echo -e "${BLUE}[INFO] Total PDF files downloaded: ${total_files} (expected: 31)${NC}"
 
 # Calculate total size
 total_size=$(du -sh . 2>/dev/null | cut -f1)

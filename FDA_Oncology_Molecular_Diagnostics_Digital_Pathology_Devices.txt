@@ -56,25 +56,55 @@ SECTION 1: NEXT-GENERATION SEQUENCING (NGS) PANELS - TISSUE BASED
 
    SUPPLEMENTS (Listed as Individual Items):
 
-   a) P170019/S014
+   a) P170019/S001
+      - Date: [See FDA website for specific date]
+      - Indication: Initial supplement for expanded indications
+      - Link: https://www.fda.gov/medical-devices/recently-approved-devices/foundationone-cdx-p170019s001
+
+   b) P170019/S004
+      - Date: July 1, 2019
+      - Indication: CDx for LYNPARZA (olaparib) in ovarian cancer patients
+        with BRCA1/2 alterations
+      - Link: https://www.fda.gov/medical-devices/recently-approved-devices/foundationone-cdx-p170019s004
+
+   c) P170019/S005
+      - Date: April 10, 2019
+      - Indication: Addition of genomic loss of heterozygosity (LOH)
+      - Link: https://www.fda.gov/medical-devices/recently-approved-devices/foundationone-cdx-p170019s005
+
+   d) P170019/S006
+      - Date: December 3, 2019
+      - Indication: CDx for PIQRAY (alpelisib) in breast cancer patients with
+        PIK3CA alterations
+      - Link: https://www.fda.gov/medical-devices/recently-approved-devices/foundationone-cdx-p170019s006
+
+   e) P170019/S008
+      - Date: July 1, 2019
+      - Indication: CDx for TAGRISSO (osimertinib) in NSCLC patients with EGFR
+        exon 19 deletions and EGFR exon 21 L858R alterations
+      - Link: https://www.fda.gov/medical-devices/recently-approved-devices/foundationone-cdx-p170019s008
+
+   f) P170019/S014
       - Date: [See FDA website for specific date]
       - Indication: Expanded companion diagnostic claims
       - Link: https://www.fda.gov/medical-devices/recently-approved-devices/foundationone-cdx-p170019s014
 
-   b) P170019/S015
+   g) P170019/S015
       - Date: [See FDA website for specific date]
       - Indication: Additional companion diagnostic claims
       - Link: https://cacmap.fda.gov/medical-devices/recently-approved-devices/foundationone-cdx-p170019s015
 
-   c) P170019/S029
+   h) P170019/S029
       - Date: [See FDA website for specific date]
-      - Indication: Expanded use with additional therapies
+      - Indication: Expanded for MSI-high status detection; CDx for KEYTRUDA
+        (pembrolizumab) in patients with solid tumors
       - SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S029B.pdf
       - Link: https://www.fda.gov/medical-devices/recently-approved-devices/foundationone-cdx-p170019s029
 
-   d) P170019/S048
+   i) P170019/S048
       - Date: November 16, 2023
-      - Indication: Four additional companion diagnostic claims
+      - Indication: Detection of PIK3CA/AKT1/PTEN gene alterations in breast
+        cancer; four additional companion diagnostic claims
       - SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S048B.pdf
       - Link: https://www.fda.gov/medical-devices/recently-approved-devices/foundationone-cdx-f1cdx-p170019s048
 
@@ -163,7 +193,7 @@ SECTION 1: NEXT-GENERATION SEQUENCING (NGS) PANELS - TISSUE BASED
    Manufacturer: Tempus Labs, Inc., Chicago, IL
 
    Original Approval:
-   - PMA Number: [P-number to be confirmed]
+   - PMA Number: P210011
    - Date: May 1, 2023
    - Device Class: III
    - Regulatory Pathway: PMA
@@ -188,14 +218,17 @@ SECTION 1: NEXT-GENERATION SEQUENCING (NGS) PANELS - TISSUE BASED
    Manufacturer: Caris Life Sciences
 
    Original Approval:
-   - Date: November 2024 (December announcement)
+   - PMA Number: P240010
+   - Date: November 6, 2024
    - Device Class: III
-   - Regulatory Pathway: PMA (presumed)
+   - Regulatory Pathway: PMA
 
    Device Description:
-   NGS-based tumor profiling assay with seven companion diagnostic indications.
-   Combines whole exome and transcriptome sequencing. Detects microsatellite
-   instability (MSI) and tumor mutational burden in solid tumors.
+   First and only simultaneous whole-exome sequencing (WES) and whole-
+   transcriptome sequencing (WTS) based assay with FDA approval and companion
+   diagnostic indications. Detects SNVs and indels in 228 genes, microsatellite
+   instability (MSI), tumor mutational burden (TMB), and copy number
+   amplification (CNA) in one gene. Uses FFPE tumor tissue.
 
    Indications:
    Identifies adult and pediatric patients (ages 1-22 years) who may benefit
@@ -207,7 +240,182 @@ SECTION 1: NEXT-GENERATION SEQUENCING (NGS) PANELS - TISSUE BASED
    - Multiple targeted therapies across different tumor types
 
    Links:
+   - SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240010B.pdf
+   - FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P240010
    - Press Coverage: https://www.onclive.com/view/mi-cancer-seek-receives-fda-approval-as-companion-diagnostic-for-targeted-therapy-across-tumor-types
+
+--------------------------------------------------------------------------------
+
+6. FOUNDATIONFOCUS CDxBRCA
+   Manufacturer: Foundation Medicine, Inc. (Roche)
+
+   Original Approval:
+   - PMA Number: P160018
+   - Date: December 19, 2016
+   - Device Class: III
+   - Regulatory Pathway: PMA
+
+   Historical Significance:
+   First FDA-approved next-generation sequencing-based companion diagnostic.
+
+   Device Description:
+   Next-generation sequencing test for qualitative detection of BRCA1 and BRCA2
+   (BRCA1/2) alterations in formalin-fixed paraffin-embedded (FFPE) ovarian
+   tumor tissue. Detects both germline (inherited) and somatic (acquired)
+   mutations.
+
+   Indications:
+   Companion diagnostic to identify ovarian cancer patients for whom treatment
+   with Rubraca (rucaparib) is being considered. Aids in identifying patients
+   with BRCA-mutated advanced ovarian cancer who may benefit from PARP
+   inhibitor therapy.
+
+   SUPPLEMENTS (Listed as Individual Items):
+
+   a) P160018/S001
+      - SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160018S001b.pdf
+      - Link: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160018
+
+   Links:
+   - FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160018
+   - Press Release: https://www.foundationmedicine.com/press-releases/foundation-medicine-receives-fda-approval-of-foundationfocus%E2%84%A2-cdxbrca-as-a-companion-diagnostic-for-rubraca%E2%84%A2-(rucaparib)-for-the-treatment-of-women-with-ovarian-cancer
+
+--------------------------------------------------------------------------------
+
+7. MSK-IMPACT (INTEGRATED MUTATION PROFILING OF ACTIONABLE CANCER TARGETS)
+   Manufacturer: Memorial Sloan Kettering Cancer Center
+
+   Original Authorization:
+   - De Novo Number: DEN170058
+   - Date: November 15, 2017
+   - Device Class: II
+   - Regulatory Pathway: De Novo
+   - Regulation Number: 21 CFR 866.6080
+
+   Historical Significance:
+   First tumor-profiling multiplex panel authorized by FDA, setting a new
+   regulatory pathway for future NGS oncopanels. First laboratory-developed
+   test (LDT) authorized by FDA for comprehensive tumor profiling.
+
+   Device Description:
+   Hybridization-capture based next-generation sequencing assay for detection
+   of somatic single nucleotide variants, insertions, deletions, and
+   microsatellite instability in 468 genes. Uses human genomic DNA obtained
+   from formalin-fixed, paraffin-embedded tumor tissue. Runs on Illumina
+   HiSeq platform.
+
+   Indications:
+   Tumor profiling for patients with solid malignant neoplasms or blood-based
+   (hematologic) neoplasms. Identifies mutations, copy number variations
+   (CNV), and rearrangements for which targeted and immune therapies are
+   approved or in clinical testing.
+
+   Links:
+   - De Novo Decision Summary: https://www.accessdata.fda.gov/cdrh_docs/reviews/den170058.pdf
+   - Press Release: https://www.mskcc.org/news-releases/msk-impact-first-tumor-profiling-multiplex-panel-authorized-fda-setting-new-pathway-market-future-oncopanels
+
+--------------------------------------------------------------------------------
+
+8. PRAXIS EXTENDED RAS PANEL
+   Manufacturer: Illumina, Inc.
+
+   Original Approval:
+   - PMA Number: P160038
+   - Date: June 29, 2017
+   - Device Class: III
+   - Regulatory Pathway: PMA
+
+   Device Description:
+   Next-generation sequencing test for detection of mutations in KRAS and NRAS
+   genes in DNA extracted from FFPE tumor tissue specimens. Detects specific
+   mutations in codons 12, 13, 59, 61, 117, and 146 of KRAS and NRAS genes.
+   Uses MiSeq Dx instrument.
+
+   Indications:
+   Companion diagnostic to identify patients with metastatic colorectal cancer
+   (mCRC) who are candidates for treatment with anti-EGFR monoclonal antibody
+   therapies (cetuximab and panitumumab). Patients with RAS mutations are not
+   candidates for these therapies.
+
+   Links:
+   - SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038B.pdf
+   - Technical Information: https://www.accessdata.fda.gov/cdrh_docs/pdf16/p160038c.pdf
+   - FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160038
+   - FDA Announcement: https://www.fda.gov/drugs/informationondrugs/approveddrugs/ucm565785.htm
+
+--------------------------------------------------------------------------------
+
+9. ONCOREVEAL CDx
+   Manufacturer: Pillar Biosciences, Inc.
+
+   Original Approval:
+   - PMA Number: P200011
+   - Date: July 2021 (original oncoReveal Dx for lung and colon)
+   - Device Class: III
+   - Regulatory Pathway: PMA
+
+   Device Description:
+   Next-generation sequencing in vitro diagnostic kit for detection of genomic
+   alterations in 22 clinically relevant genes across all solid tumors. Pan-
+   cancer solid tumor profiling assay using DNA from FFPE tissue. Runs on
+   Illumina MiSeq Dx system. Single-day workflow with sample-to-report time
+   as little as 48 hours.
+
+   Indications:
+   General tumor profiling for solid tumors. Companion diagnostic indications
+   for:
+   - KRAS mutations in colorectal cancer (for Erbitux and Vectibix)
+   - EGFR mutations in non-small cell lung cancer (for EGFR TKI class)
+
+   SUPPLEMENTS (Listed as Individual Items):
+
+   a) P200011/S001
+      - Date: April 23, 2024
+      - Indication: Expanded from NSCLC and CRC only to include general solid
+        tumor profiling across all cancer types
+      - SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200011S001B.pdf
+      - Link: https://www.pillarbiosci.com/news/pillar-biosciences-oncoreveal-cdx-pan-cancer-solid-tumor-ivd-now-fda-approved-for-general-tumor-profiling-on-the-illumina-miseqdx-system/
+
+   Links:
+   - FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P200011
+   - Product Page: https://www.pillarbiosci.com/products/oncoreveal-cdx/
+
+--------------------------------------------------------------------------------
+
+10. PGDX ELIO TISSUE COMPLETE
+    Manufacturer: Personal Genome Diagnostics (PGDx) / Labcorp
+
+    Original Clearance:
+    - Clearance Type: FDA Market Clearance (Not PMA)
+    - Date: April 27, 2020
+    - Device Class: II
+    - Regulatory Pathway: FDA Clearance
+
+    Historical Significance:
+    First and only FDA-cleared comprehensive genomic profiling diagnostic kit
+    for oncology (as of 2020 approval). Industry's first FDA-cleared tumor
+    profiling kitted solution.
+
+    Device Description:
+    Next-generation sequencing diagnostic kit for comprehensive tumor profiling.
+    Analyzes 505 cancer-related genes for single nucleotide variants (SNVs),
+    small insertions and deletions (indels), select amplifications and
+    translocations. Reports microsatellite instability (MSI) and tumor
+    mutation burden (TMB). Uses DNA from FFPE tumor tissue. Automated data
+    analysis incorporated in cleared product.
+
+    Indications:
+    Qualitative in vitro diagnostic device for comprehensive tumor profiling
+    in patients with solid malignant neoplasms. Clinical success rate >92%.
+
+    Regulatory Note:
+    Unlike most comprehensive NGS panels which require PMA approval, PGDx elio
+    tissue complete received FDA clearance as a diagnostic kit, enabling
+    broader implementation across healthcare systems.
+
+    Links:
+    - Product Page: https://www.personalgenome.com/products/elio-tissue-complete
+    - Press Release: https://www.businesswire.com/news/home/20200427005738/en/Personal-Genome-Diagnostics-Receives-FDA-Clearance-for-PGDx-elio%E2%84%A2-tissue-complete-the-First-Comprehensive-Genomic-Profiling-Diagnostic-Kit-for-Oncology
 
 ================================================================================
 SECTION 2: COMPANION DIAGNOSTICS - PCR BASED
@@ -543,12 +751,30 @@ SECTION 5: LIQUID BIOPSY TESTS (CIRCULATING CELL-FREE DNA)
 
    SUPPLEMENTS (Listed as Individual Items):
 
-   a) P200010/S008
+   a) P200010/S001
+      - Date: May 21, 2021
+      - Indication: CDx for RYBREVANT (amivantamab-vmjw) in NSCLC patients with
+        EGFR exon 20 insertion mutations
+      - Link: https://www.fda.gov/medical-devices/recently-approved-devices/guardant360-cdx-p200010s001
+
+   b) P200010/S002
+      - Date: [See FDA website]
+      - Indication: Additional CDx indications
+      - Link: https://www.fda.gov/medical-devices/recently-approved-devices/guardant360-cdx-p200010s002
+
+   c) P200010/S008
+      - Date: August 11, 2022
+      - Indication: CDx for ENHERTU (fam-trastuzumab deruxtecan-nxki) in NSCLC
+        patients with ERBB2 activating mutations
       - Technical Information: https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S008C.pdf
       - Link: https://www.fda.gov/medical-devices/recently-approved-devices/guardant360-cdx-p200010s008
 
-   b) P200010/S010
+   d) P200010/S010
+      - Date: January 27, 2023
+      - Indication: CDx for ORSERDU (elacestrant) in breast cancer patients with
+        ESR1 missense mutations
       - SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S010B.pdf
+      - Link: https://www.fda.gov/medical-devices/recently-approved-devices/guardant360-cdx-p200010s010
 
    Links:
    - Original SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010B.pdf

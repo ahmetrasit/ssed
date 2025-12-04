@@ -46,7 +46,7 @@ cd FDA_SSED_Documents/
 
 **What it does:**
 - Creates folder structure automatically
-- Downloads all 20 files with optimal settings
+- Downloads all 31 files with optimal settings
 - Shows progress and summary
 - Takes ~2-3 minutes
 
@@ -266,7 +266,7 @@ mkdir -p {NGS_Panels,PCR_Companion_Diagnostics,IHC_Companion_Diagnostics,FISH_Co
 aria2c -i aria2_input.txt -x 16 -s 16 -j 4
 
 # 4. Verify downloads
-find . -name "*.pdf" | wc -l  # Should be 20
+find . -name "*.pdf" | wc -l  # Should be 31
 
 # 5. Check sizes
 du -sh */
@@ -328,4 +328,4 @@ Or manually:
 aria2c -i aria2_input.txt -x 16 -s 16 -j 4 --continue=true --max-tries=5
 ```
 
-**Result:** All 20 documents downloaded in ~2-3 minutes! ⚡
+**Result:** All 31 documents downloaded in ~2-3 minutes! ⚡
