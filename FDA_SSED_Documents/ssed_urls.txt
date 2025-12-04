@@ -15,17 +15,35 @@
 #     curl -o "$category/$filename" "$url"
 #   done < ssed_urls.txt
 
-# NGS PANELS
+# NGS PANELS - PRODUCT CODE PQP DEVICES
+# Total: 15 base PMAs with 206 entries (originals + supplements)
+# SSEDs below are publicly available documents from FDA database
+
+# FoundationOne CDx (P170019) - 54 total entries
 https://www.accessdata.fda.gov/cdrh_docs/pdf17/p170019b.pdf|FoundationOne_CDx_P170019_Original_SSED.pdf|NGS_Panels
 https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S029B.pdf|FoundationOne_CDx_P170019_S029_SSED.pdf|NGS_Panels
 https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S048B.pdf|FoundationOne_CDx_P170019_S048_SSED.pdf|NGS_Panels
+
+# Oncomine Dx Target Test (P160045) - 44 total entries
 https://www.accessdata.fda.gov/cdrh_docs/pdf16/p160045b.pdf|Oncomine_Dx_Target_P160045_Original_SSED.pdf|NGS_Panels
+
+# TruSight Oncology Comprehensive (P230011) - 5 total entries
 https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230011C.pdf|TruSight_Oncology_Comprehensive_P230011_Technical_Info.pdf|NGS_Panels
+
+# MI Cancer Seek (P240010) - 6 total entries
 https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240010B.pdf|MI_Cancer_Seek_P240010_SSED.pdf|NGS_Panels
+
+# FoundationFocus CDxBRCA (P160018) - 2 total entries
 https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160018S001b.pdf|FoundationFocus_CDxBRCA_P160018_S001_SSED.pdf|NGS_Panels
+
+# MSK-IMPACT (DEN170058) - De Novo authorization
 https://www.accessdata.fda.gov/cdrh_docs/reviews/den170058.pdf|MSK-IMPACT_DEN170058_De_Novo_Summary.pdf|NGS_Panels
+
+# Praxis Extended RAS Panel (P160038) - 26 total entries
 https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038B.pdf|Praxis_Extended_RAS_Panel_P160038_SSED.pdf|NGS_Panels
 https://www.accessdata.fda.gov/cdrh_docs/pdf16/p160038c.pdf|Praxis_Extended_RAS_Panel_P160038_Technical_Info.pdf|NGS_Panels
+
+# oncoReveal CDx (P200011) - 3 total entries
 https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200011S001B.pdf|oncoReveal_CDx_P200011_S001_SSED.pdf|NGS_Panels
 
 # PCR COMPANION DIAGNOSTICS
