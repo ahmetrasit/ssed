@@ -1,50 +1,461 @@
-# FDA SSED Documents - Direct Download URLs
+# FDA SSED Documents - Comprehensive Download List
 # Format: URL|OutputFilename|Category
 #
-# Usage with wget:
+# IMPORTANT NOTES:
+# - This file includes URLs for ALL 206 PQP device entries (originals + supplements)
+# - Not all supplement URLs will be valid (many will return 404)
+# - aria2c will automatically skip failed downloads with --max-file-not-found=0
+# - Expected valid documents: ~50-100 out of ~400+ URLs
+#
+# Usage with wget (skip 404 errors):
 #   while IFS='|' read -r url filename category; do
 #     [[ "$url" =~ ^#.*$ ]] && continue
 #     mkdir -p "$category"
-#     wget -O "$category/$filename" "$url"
+#     wget -O "$category/$filename" "$url" || true
 #   done < ssed_urls.txt
 #
-# Usage with curl:
-#   while IFS='|' read -r url filename category; do
-#     [[ "$url" =~ ^#.*$ ]] && continue
-#     mkdir -p "$category"
-#     curl -o "$category/$filename" "$url"
-#   done < ssed_urls.txt
+# Usage with aria2 (recommended - auto-skips failures):
+#   aria2c -i aria2_input.txt -x 16 -s 16 -j 4 --max-file-not-found=0 --continue=true
+#
 
-# NGS PANELS - PRODUCT CODE PQP DEVICES
-# Total: 15 base PMAs with 206 entries (originals + supplements)
-# SSEDs below are publicly available documents from FDA database
 
-# FoundationOne CDx (P170019) - 54 total entries
+# ============================================================================
+# NGS PANELS - PRODUCT CODE PQP DEVICES (206 total entries)
+# ============================================================================
+# Includes all originals and supplements from FDA PMA database
+# Many supplement URLs may return 404 (expected - not all have public SSEDs)
+
+# FoundationOne_CDx (P170019) - 1 original + 53 supplements
 https://www.accessdata.fda.gov/cdrh_docs/pdf17/p170019b.pdf|FoundationOne_CDx_P170019_Original_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S002B.pdf|FoundationOne_CDx_P170019_S002_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S002C.pdf|FoundationOne_CDx_P170019_S002_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S003B.pdf|FoundationOne_CDx_P170019_S003_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S003C.pdf|FoundationOne_CDx_P170019_S003_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S004B.pdf|FoundationOne_CDx_P170019_S004_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S004C.pdf|FoundationOne_CDx_P170019_S004_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S005B.pdf|FoundationOne_CDx_P170019_S005_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S005C.pdf|FoundationOne_CDx_P170019_S005_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S006B.pdf|FoundationOne_CDx_P170019_S006_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S006C.pdf|FoundationOne_CDx_P170019_S006_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S007B.pdf|FoundationOne_CDx_P170019_S007_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S007C.pdf|FoundationOne_CDx_P170019_S007_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S008B.pdf|FoundationOne_CDx_P170019_S008_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S008C.pdf|FoundationOne_CDx_P170019_S008_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S009B.pdf|FoundationOne_CDx_P170019_S009_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S009C.pdf|FoundationOne_CDx_P170019_S009_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S010B.pdf|FoundationOne_CDx_P170019_S010_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S010C.pdf|FoundationOne_CDx_P170019_S010_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S011B.pdf|FoundationOne_CDx_P170019_S011_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S011C.pdf|FoundationOne_CDx_P170019_S011_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S012B.pdf|FoundationOne_CDx_P170019_S012_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S012C.pdf|FoundationOne_CDx_P170019_S012_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S013B.pdf|FoundationOne_CDx_P170019_S013_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S013C.pdf|FoundationOne_CDx_P170019_S013_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S014B.pdf|FoundationOne_CDx_P170019_S014_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S014C.pdf|FoundationOne_CDx_P170019_S014_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S015B.pdf|FoundationOne_CDx_P170019_S015_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S015C.pdf|FoundationOne_CDx_P170019_S015_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S016B.pdf|FoundationOne_CDx_P170019_S016_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S016C.pdf|FoundationOne_CDx_P170019_S016_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S017B.pdf|FoundationOne_CDx_P170019_S017_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S017C.pdf|FoundationOne_CDx_P170019_S017_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S018B.pdf|FoundationOne_CDx_P170019_S018_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S018C.pdf|FoundationOne_CDx_P170019_S018_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S019B.pdf|FoundationOne_CDx_P170019_S019_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S019C.pdf|FoundationOne_CDx_P170019_S019_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S020B.pdf|FoundationOne_CDx_P170019_S020_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S020C.pdf|FoundationOne_CDx_P170019_S020_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S021B.pdf|FoundationOne_CDx_P170019_S021_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S021C.pdf|FoundationOne_CDx_P170019_S021_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S022B.pdf|FoundationOne_CDx_P170019_S022_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S022C.pdf|FoundationOne_CDx_P170019_S022_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S023B.pdf|FoundationOne_CDx_P170019_S023_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S023C.pdf|FoundationOne_CDx_P170019_S023_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S025B.pdf|FoundationOne_CDx_P170019_S025_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S025C.pdf|FoundationOne_CDx_P170019_S025_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S026B.pdf|FoundationOne_CDx_P170019_S026_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S026C.pdf|FoundationOne_CDx_P170019_S026_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S028B.pdf|FoundationOne_CDx_P170019_S028_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S028C.pdf|FoundationOne_CDx_P170019_S028_Technical.pdf|NGS_Panels
 https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S029B.pdf|FoundationOne_CDx_P170019_S029_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S029C.pdf|FoundationOne_CDx_P170019_S029_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S030B.pdf|FoundationOne_CDx_P170019_S030_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S030C.pdf|FoundationOne_CDx_P170019_S030_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S032B.pdf|FoundationOne_CDx_P170019_S032_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S032C.pdf|FoundationOne_CDx_P170019_S032_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S033B.pdf|FoundationOne_CDx_P170019_S033_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S033C.pdf|FoundationOne_CDx_P170019_S033_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S034B.pdf|FoundationOne_CDx_P170019_S034_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S034C.pdf|FoundationOne_CDx_P170019_S034_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S035B.pdf|FoundationOne_CDx_P170019_S035_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S035C.pdf|FoundationOne_CDx_P170019_S035_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S036B.pdf|FoundationOne_CDx_P170019_S036_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S036C.pdf|FoundationOne_CDx_P170019_S036_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S037B.pdf|FoundationOne_CDx_P170019_S037_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S037C.pdf|FoundationOne_CDx_P170019_S037_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S038B.pdf|FoundationOne_CDx_P170019_S038_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S038C.pdf|FoundationOne_CDx_P170019_S038_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S039B.pdf|FoundationOne_CDx_P170019_S039_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S039C.pdf|FoundationOne_CDx_P170019_S039_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S040B.pdf|FoundationOne_CDx_P170019_S040_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S040C.pdf|FoundationOne_CDx_P170019_S040_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S041B.pdf|FoundationOne_CDx_P170019_S041_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S041C.pdf|FoundationOne_CDx_P170019_S041_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S042B.pdf|FoundationOne_CDx_P170019_S042_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S042C.pdf|FoundationOne_CDx_P170019_S042_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S043B.pdf|FoundationOne_CDx_P170019_S043_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S043C.pdf|FoundationOne_CDx_P170019_S043_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S044B.pdf|FoundationOne_CDx_P170019_S044_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S044C.pdf|FoundationOne_CDx_P170019_S044_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S045B.pdf|FoundationOne_CDx_P170019_S045_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S045C.pdf|FoundationOne_CDx_P170019_S045_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S046B.pdf|FoundationOne_CDx_P170019_S046_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S046C.pdf|FoundationOne_CDx_P170019_S046_Technical.pdf|NGS_Panels
 https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S048B.pdf|FoundationOne_CDx_P170019_S048_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S048C.pdf|FoundationOne_CDx_P170019_S048_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S049B.pdf|FoundationOne_CDx_P170019_S049_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S049C.pdf|FoundationOne_CDx_P170019_S049_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S050B.pdf|FoundationOne_CDx_P170019_S050_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S050C.pdf|FoundationOne_CDx_P170019_S050_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S051B.pdf|FoundationOne_CDx_P170019_S051_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S051C.pdf|FoundationOne_CDx_P170019_S051_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S052B.pdf|FoundationOne_CDx_P170019_S052_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S052C.pdf|FoundationOne_CDx_P170019_S052_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S053B.pdf|FoundationOne_CDx_P170019_S053_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S053C.pdf|FoundationOne_CDx_P170019_S053_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S054B.pdf|FoundationOne_CDx_P170019_S054_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S054C.pdf|FoundationOne_CDx_P170019_S054_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S056B.pdf|FoundationOne_CDx_P170019_S056_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S056C.pdf|FoundationOne_CDx_P170019_S056_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S058B.pdf|FoundationOne_CDx_P170019_S058_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S058C.pdf|FoundationOne_CDx_P170019_S058_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S061B.pdf|FoundationOne_CDx_P170019_S061_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S061C.pdf|FoundationOne_CDx_P170019_S061_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S063B.pdf|FoundationOne_CDx_P170019_S063_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S063C.pdf|FoundationOne_CDx_P170019_S063_Technical.pdf|NGS_Panels
 
-# Oncomine Dx Target Test (P160045) - 44 total entries
+# Oncomine_Dx_Target (P160045) - 1 original + 43 supplements
 https://www.accessdata.fda.gov/cdrh_docs/pdf16/p160045b.pdf|Oncomine_Dx_Target_P160045_Original_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S001B.pdf|Oncomine_Dx_Target_P160045_S001_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S001C.pdf|Oncomine_Dx_Target_P160045_S001_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S002B.pdf|Oncomine_Dx_Target_P160045_S002_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S002C.pdf|Oncomine_Dx_Target_P160045_S002_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S003B.pdf|Oncomine_Dx_Target_P160045_S003_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S003C.pdf|Oncomine_Dx_Target_P160045_S003_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S005B.pdf|Oncomine_Dx_Target_P160045_S005_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S005C.pdf|Oncomine_Dx_Target_P160045_S005_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S006B.pdf|Oncomine_Dx_Target_P160045_S006_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S006C.pdf|Oncomine_Dx_Target_P160045_S006_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S008B.pdf|Oncomine_Dx_Target_P160045_S008_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S008C.pdf|Oncomine_Dx_Target_P160045_S008_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S010B.pdf|Oncomine_Dx_Target_P160045_S010_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S010C.pdf|Oncomine_Dx_Target_P160045_S010_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S011B.pdf|Oncomine_Dx_Target_P160045_S011_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S011C.pdf|Oncomine_Dx_Target_P160045_S011_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S012B.pdf|Oncomine_Dx_Target_P160045_S012_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S012C.pdf|Oncomine_Dx_Target_P160045_S012_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S013B.pdf|Oncomine_Dx_Target_P160045_S013_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S013C.pdf|Oncomine_Dx_Target_P160045_S013_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S014B.pdf|Oncomine_Dx_Target_P160045_S014_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S014C.pdf|Oncomine_Dx_Target_P160045_S014_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S015B.pdf|Oncomine_Dx_Target_P160045_S015_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S015C.pdf|Oncomine_Dx_Target_P160045_S015_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S016B.pdf|Oncomine_Dx_Target_P160045_S016_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S016C.pdf|Oncomine_Dx_Target_P160045_S016_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S018B.pdf|Oncomine_Dx_Target_P160045_S018_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S018C.pdf|Oncomine_Dx_Target_P160045_S018_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S019B.pdf|Oncomine_Dx_Target_P160045_S019_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S019C.pdf|Oncomine_Dx_Target_P160045_S019_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S020B.pdf|Oncomine_Dx_Target_P160045_S020_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S020C.pdf|Oncomine_Dx_Target_P160045_S020_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S021B.pdf|Oncomine_Dx_Target_P160045_S021_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S021C.pdf|Oncomine_Dx_Target_P160045_S021_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S022B.pdf|Oncomine_Dx_Target_P160045_S022_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S022C.pdf|Oncomine_Dx_Target_P160045_S022_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S023B.pdf|Oncomine_Dx_Target_P160045_S023_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S023C.pdf|Oncomine_Dx_Target_P160045_S023_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S024B.pdf|Oncomine_Dx_Target_P160045_S024_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S024C.pdf|Oncomine_Dx_Target_P160045_S024_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S025B.pdf|Oncomine_Dx_Target_P160045_S025_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S025C.pdf|Oncomine_Dx_Target_P160045_S025_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S027B.pdf|Oncomine_Dx_Target_P160045_S027_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S027C.pdf|Oncomine_Dx_Target_P160045_S027_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S028B.pdf|Oncomine_Dx_Target_P160045_S028_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S028C.pdf|Oncomine_Dx_Target_P160045_S028_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S029B.pdf|Oncomine_Dx_Target_P160045_S029_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S029C.pdf|Oncomine_Dx_Target_P160045_S029_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S030B.pdf|Oncomine_Dx_Target_P160045_S030_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S030C.pdf|Oncomine_Dx_Target_P160045_S030_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S031B.pdf|Oncomine_Dx_Target_P160045_S031_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S031C.pdf|Oncomine_Dx_Target_P160045_S031_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S034B.pdf|Oncomine_Dx_Target_P160045_S034_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S034C.pdf|Oncomine_Dx_Target_P160045_S034_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S035B.pdf|Oncomine_Dx_Target_P160045_S035_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S035C.pdf|Oncomine_Dx_Target_P160045_S035_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S036B.pdf|Oncomine_Dx_Target_P160045_S036_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S036C.pdf|Oncomine_Dx_Target_P160045_S036_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S037B.pdf|Oncomine_Dx_Target_P160045_S037_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S037C.pdf|Oncomine_Dx_Target_P160045_S037_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S038B.pdf|Oncomine_Dx_Target_P160045_S038_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S038C.pdf|Oncomine_Dx_Target_P160045_S038_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S040B.pdf|Oncomine_Dx_Target_P160045_S040_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S040C.pdf|Oncomine_Dx_Target_P160045_S040_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S041B.pdf|Oncomine_Dx_Target_P160045_S041_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S041C.pdf|Oncomine_Dx_Target_P160045_S041_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S042B.pdf|Oncomine_Dx_Target_P160045_S042_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S042C.pdf|Oncomine_Dx_Target_P160045_S042_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S043B.pdf|Oncomine_Dx_Target_P160045_S043_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S043C.pdf|Oncomine_Dx_Target_P160045_S043_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S044B.pdf|Oncomine_Dx_Target_P160045_S044_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S044C.pdf|Oncomine_Dx_Target_P160045_S044_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S045B.pdf|Oncomine_Dx_Target_P160045_S045_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S045C.pdf|Oncomine_Dx_Target_P160045_S045_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S046B.pdf|Oncomine_Dx_Target_P160045_S046_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S046C.pdf|Oncomine_Dx_Target_P160045_S046_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S047B.pdf|Oncomine_Dx_Target_P160045_S047_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S047C.pdf|Oncomine_Dx_Target_P160045_S047_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S048B.pdf|Oncomine_Dx_Target_P160045_S048_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S048C.pdf|Oncomine_Dx_Target_P160045_S048_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S049B.pdf|Oncomine_Dx_Target_P160045_S049_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S049C.pdf|Oncomine_Dx_Target_P160045_S049_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S050B.pdf|Oncomine_Dx_Target_P160045_S050_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S050C.pdf|Oncomine_Dx_Target_P160045_S050_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S051B.pdf|Oncomine_Dx_Target_P160045_S051_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160045S051C.pdf|Oncomine_Dx_Target_P160045_S051_Technical.pdf|NGS_Panels
 
-# TruSight Oncology Comprehensive (P230011) - 5 total entries
-https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230011C.pdf|TruSight_Oncology_Comprehensive_P230011_Technical_Info.pdf|NGS_Panels
+# Praxis_Extended_RAS (P160038) - 1 original + 25 supplements
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/p160038b.pdf|Praxis_Extended_RAS_P160038_Original_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S001B.pdf|Praxis_Extended_RAS_P160038_S001_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S001C.pdf|Praxis_Extended_RAS_P160038_S001_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S002B.pdf|Praxis_Extended_RAS_P160038_S002_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S002C.pdf|Praxis_Extended_RAS_P160038_S002_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S003B.pdf|Praxis_Extended_RAS_P160038_S003_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S003C.pdf|Praxis_Extended_RAS_P160038_S003_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S004B.pdf|Praxis_Extended_RAS_P160038_S004_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S004C.pdf|Praxis_Extended_RAS_P160038_S004_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S005B.pdf|Praxis_Extended_RAS_P160038_S005_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S005C.pdf|Praxis_Extended_RAS_P160038_S005_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S006B.pdf|Praxis_Extended_RAS_P160038_S006_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S006C.pdf|Praxis_Extended_RAS_P160038_S006_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S007B.pdf|Praxis_Extended_RAS_P160038_S007_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S007C.pdf|Praxis_Extended_RAS_P160038_S007_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S008B.pdf|Praxis_Extended_RAS_P160038_S008_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S008C.pdf|Praxis_Extended_RAS_P160038_S008_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S009B.pdf|Praxis_Extended_RAS_P160038_S009_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S009C.pdf|Praxis_Extended_RAS_P160038_S009_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S010B.pdf|Praxis_Extended_RAS_P160038_S010_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S010C.pdf|Praxis_Extended_RAS_P160038_S010_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S011B.pdf|Praxis_Extended_RAS_P160038_S011_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S011C.pdf|Praxis_Extended_RAS_P160038_S011_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S012B.pdf|Praxis_Extended_RAS_P160038_S012_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S012C.pdf|Praxis_Extended_RAS_P160038_S012_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S013B.pdf|Praxis_Extended_RAS_P160038_S013_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S013C.pdf|Praxis_Extended_RAS_P160038_S013_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S014B.pdf|Praxis_Extended_RAS_P160038_S014_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S014C.pdf|Praxis_Extended_RAS_P160038_S014_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S015B.pdf|Praxis_Extended_RAS_P160038_S015_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S015C.pdf|Praxis_Extended_RAS_P160038_S015_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S016B.pdf|Praxis_Extended_RAS_P160038_S016_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S016C.pdf|Praxis_Extended_RAS_P160038_S016_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S017B.pdf|Praxis_Extended_RAS_P160038_S017_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S017C.pdf|Praxis_Extended_RAS_P160038_S017_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S018B.pdf|Praxis_Extended_RAS_P160038_S018_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S018C.pdf|Praxis_Extended_RAS_P160038_S018_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S019B.pdf|Praxis_Extended_RAS_P160038_S019_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S019C.pdf|Praxis_Extended_RAS_P160038_S019_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S020B.pdf|Praxis_Extended_RAS_P160038_S020_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S020C.pdf|Praxis_Extended_RAS_P160038_S020_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S021B.pdf|Praxis_Extended_RAS_P160038_S021_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S021C.pdf|Praxis_Extended_RAS_P160038_S021_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S022B.pdf|Praxis_Extended_RAS_P160038_S022_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S022C.pdf|Praxis_Extended_RAS_P160038_S022_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S023B.pdf|Praxis_Extended_RAS_P160038_S023_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S023C.pdf|Praxis_Extended_RAS_P160038_S023_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S024B.pdf|Praxis_Extended_RAS_P160038_S024_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S024C.pdf|Praxis_Extended_RAS_P160038_S024_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S025B.pdf|Praxis_Extended_RAS_P160038_S025_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038S025C.pdf|Praxis_Extended_RAS_P160038_S025_Technical.pdf|NGS_Panels
 
-# MI Cancer Seek (P240010) - 6 total entries
-https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240010B.pdf|MI_Cancer_Seek_P240010_SSED.pdf|NGS_Panels
+# FoundationFocus_CDxBRCA (P160018) - 0 original + 1 supplements
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160018S001B.pdf|FoundationFocus_CDxBRCA_P160018_S001_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160018S001C.pdf|FoundationFocus_CDxBRCA_P160018_S001_Technical.pdf|NGS_Panels
 
-# FoundationFocus CDxBRCA (P160018) - 2 total entries
-https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160018S001b.pdf|FoundationFocus_CDxBRCA_P160018_S001_SSED.pdf|NGS_Panels
+# oncoReveal_CDx (P200011) - 1 original + 2 supplements
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/p200011b.pdf|oncoReveal_CDx_P200011_Original_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200011S001B.pdf|oncoReveal_CDx_P200011_S001_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200011S001C.pdf|oncoReveal_CDx_P200011_S001_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200011S002B.pdf|oncoReveal_CDx_P200011_S002_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200011S002C.pdf|oncoReveal_CDx_P200011_S002_Technical.pdf|NGS_Panels
 
-# MSK-IMPACT (DEN170058) - De Novo authorization
+# TruSight_Oncology_Comprehensive (P230011) - 0 original + 4 supplements
+https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230011S001B.pdf|TruSight_Oncology_Comprehensive_P230011_S001_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230011S001C.pdf|TruSight_Oncology_Comprehensive_P230011_S001_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230011S003B.pdf|TruSight_Oncology_Comprehensive_P230011_S003_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230011S003C.pdf|TruSight_Oncology_Comprehensive_P230011_S003_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230011S004B.pdf|TruSight_Oncology_Comprehensive_P230011_S004_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230011S004C.pdf|TruSight_Oncology_Comprehensive_P230011_S004_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230011S005B.pdf|TruSight_Oncology_Comprehensive_P230011_S005_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230011S005C.pdf|TruSight_Oncology_Comprehensive_P230011_S005_Technical.pdf|NGS_Panels
+
+# MI_Cancer_Seek (P240010) - 1 original + 5 supplements
+https://www.accessdata.fda.gov/cdrh_docs/pdf24/p240010b.pdf|MI_Cancer_Seek_P240010_Original_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240010S001B.pdf|MI_Cancer_Seek_P240010_S001_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240010S001C.pdf|MI_Cancer_Seek_P240010_S001_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240010S002B.pdf|MI_Cancer_Seek_P240010_S002_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240010S002C.pdf|MI_Cancer_Seek_P240010_S002_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240010S003B.pdf|MI_Cancer_Seek_P240010_S003_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240010S003C.pdf|MI_Cancer_Seek_P240010_S003_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240010S004B.pdf|MI_Cancer_Seek_P240010_S004_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240010S004C.pdf|MI_Cancer_Seek_P240010_S004_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240010S005B.pdf|MI_Cancer_Seek_P240010_S005_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240010S005C.pdf|MI_Cancer_Seek_P240010_S005_Technical.pdf|NGS_Panels
+
+# Oncomine_Dx_Express (P240040) - 1 original + 3 supplements
+https://www.accessdata.fda.gov/cdrh_docs/pdf24/p240040b.pdf|Oncomine_Dx_Express_P240040_Original_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240040S001B.pdf|Oncomine_Dx_Express_P240040_S001_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240040S001C.pdf|Oncomine_Dx_Express_P240040_S001_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240040S002B.pdf|Oncomine_Dx_Express_P240040_S002_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240040S002C.pdf|Oncomine_Dx_Express_P240040_S002_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240040S003B.pdf|Oncomine_Dx_Express_P240040_S003_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240040S003C.pdf|Oncomine_Dx_Express_P240040_S003_Technical.pdf|NGS_Panels
+
+# myChoice_CDx (P190014) - 0 original + 3 supplements
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190014S001B.pdf|myChoice_CDx_P190014_S001_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190014S001C.pdf|myChoice_CDx_P190014_S001_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190014S002B.pdf|myChoice_CDx_P190014_S002_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190014S002C.pdf|myChoice_CDx_P190014_S002_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190014S003B.pdf|myChoice_CDx_P190014_S003_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190014S003C.pdf|myChoice_CDx_P190014_S003_Technical.pdf|NGS_Panels
+
+# Tempus_xT_CDx (P210011) - 1 original + 2 supplements
+https://www.accessdata.fda.gov/cdrh_docs/pdf21/p210011b.pdf|Tempus_xT_CDx_P210011_Original_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf21/P210011S001B.pdf|Tempus_xT_CDx_P210011_S001_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf21/P210011S001C.pdf|Tempus_xT_CDx_P210011_S001_Technical.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf21/P210011S003B.pdf|Tempus_xT_CDx_P210011_S003_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf21/P210011S003C.pdf|Tempus_xT_CDx_P210011_S003_Technical.pdf|NGS_Panels
+
+# MSK-IMPACT (De Novo Authorization)
 https://www.accessdata.fda.gov/cdrh_docs/reviews/den170058.pdf|MSK-IMPACT_DEN170058_De_Novo_Summary.pdf|NGS_Panels
 
-# Praxis Extended RAS Panel (P160038) - 26 total entries
-https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038B.pdf|Praxis_Extended_RAS_Panel_P160038_SSED.pdf|NGS_Panels
-https://www.accessdata.fda.gov/cdrh_docs/pdf16/p160038c.pdf|Praxis_Extended_RAS_Panel_P160038_Technical_Info.pdf|NGS_Panels
+# ============================================================================
+# LIQUID BIOPSY TESTS - PQP DEVICES
+# ============================================================================
 
-# oncoReveal CDx (P200011) - 3 total entries
-https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200011S001B.pdf|oncoReveal_CDx_P200011_S001_SSED.pdf|NGS_Panels
+# FoundationOne_Liquid_CDx (P190032) - 0 original + 23 supplements
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S001B.pdf|FoundationOne_Liquid_CDx_P190032_S001_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S001C.pdf|FoundationOne_Liquid_CDx_P190032_S001_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S003B.pdf|FoundationOne_Liquid_CDx_P190032_S003_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S003C.pdf|FoundationOne_Liquid_CDx_P190032_S003_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S004B.pdf|FoundationOne_Liquid_CDx_P190032_S004_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S004C.pdf|FoundationOne_Liquid_CDx_P190032_S004_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S005B.pdf|FoundationOne_Liquid_CDx_P190032_S005_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S005C.pdf|FoundationOne_Liquid_CDx_P190032_S005_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S006B.pdf|FoundationOne_Liquid_CDx_P190032_S006_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S006C.pdf|FoundationOne_Liquid_CDx_P190032_S006_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S007B.pdf|FoundationOne_Liquid_CDx_P190032_S007_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S007C.pdf|FoundationOne_Liquid_CDx_P190032_S007_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S008B.pdf|FoundationOne_Liquid_CDx_P190032_S008_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S008C.pdf|FoundationOne_Liquid_CDx_P190032_S008_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S009B.pdf|FoundationOne_Liquid_CDx_P190032_S009_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S009C.pdf|FoundationOne_Liquid_CDx_P190032_S009_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S010B.pdf|FoundationOne_Liquid_CDx_P190032_S010_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S010C.pdf|FoundationOne_Liquid_CDx_P190032_S010_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S011B.pdf|FoundationOne_Liquid_CDx_P190032_S011_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S011C.pdf|FoundationOne_Liquid_CDx_P190032_S011_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S013B.pdf|FoundationOne_Liquid_CDx_P190032_S013_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S013C.pdf|FoundationOne_Liquid_CDx_P190032_S013_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S014B.pdf|FoundationOne_Liquid_CDx_P190032_S014_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S014C.pdf|FoundationOne_Liquid_CDx_P190032_S014_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S015B.pdf|FoundationOne_Liquid_CDx_P190032_S015_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S015C.pdf|FoundationOne_Liquid_CDx_P190032_S015_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S016B.pdf|FoundationOne_Liquid_CDx_P190032_S016_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S016C.pdf|FoundationOne_Liquid_CDx_P190032_S016_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S017B.pdf|FoundationOne_Liquid_CDx_P190032_S017_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S017C.pdf|FoundationOne_Liquid_CDx_P190032_S017_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S018B.pdf|FoundationOne_Liquid_CDx_P190032_S018_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S018C.pdf|FoundationOne_Liquid_CDx_P190032_S018_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S020B.pdf|FoundationOne_Liquid_CDx_P190032_S020_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S020C.pdf|FoundationOne_Liquid_CDx_P190032_S020_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S021B.pdf|FoundationOne_Liquid_CDx_P190032_S021_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S021C.pdf|FoundationOne_Liquid_CDx_P190032_S021_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S022B.pdf|FoundationOne_Liquid_CDx_P190032_S022_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S022C.pdf|FoundationOne_Liquid_CDx_P190032_S022_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S023B.pdf|FoundationOne_Liquid_CDx_P190032_S023_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S023C.pdf|FoundationOne_Liquid_CDx_P190032_S023_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S024B.pdf|FoundationOne_Liquid_CDx_P190032_S024_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S024C.pdf|FoundationOne_Liquid_CDx_P190032_S024_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S026B.pdf|FoundationOne_Liquid_CDx_P190032_S026_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S026C.pdf|FoundationOne_Liquid_CDx_P190032_S026_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S028B.pdf|FoundationOne_Liquid_CDx_P190032_S028_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032S028C.pdf|FoundationOne_Liquid_CDx_P190032_S028_Technical.pdf|Liquid_Biopsy
+
+# Guardant360_CDx (P200010) - 1 original + 21 supplements
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010B.pdf|Guardant360_CDx_P200010_Original_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S001B.pdf|Guardant360_CDx_P200010_S001_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S001C.pdf|Guardant360_CDx_P200010_S001_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S002B.pdf|Guardant360_CDx_P200010_S002_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S002C.pdf|Guardant360_CDx_P200010_S002_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S004B.pdf|Guardant360_CDx_P200010_S004_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S004C.pdf|Guardant360_CDx_P200010_S004_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S005B.pdf|Guardant360_CDx_P200010_S005_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S005C.pdf|Guardant360_CDx_P200010_S005_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S006B.pdf|Guardant360_CDx_P200010_S006_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S006C.pdf|Guardant360_CDx_P200010_S006_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S007B.pdf|Guardant360_CDx_P200010_S007_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S007C.pdf|Guardant360_CDx_P200010_S007_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S008B.pdf|Guardant360_CDx_P200010_S008_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S008C.pdf|Guardant360_CDx_P200010_S008_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S009B.pdf|Guardant360_CDx_P200010_S009_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S009C.pdf|Guardant360_CDx_P200010_S009_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S010B.pdf|Guardant360_CDx_P200010_S010_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S010C.pdf|Guardant360_CDx_P200010_S010_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S011B.pdf|Guardant360_CDx_P200010_S011_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S011C.pdf|Guardant360_CDx_P200010_S011_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S013B.pdf|Guardant360_CDx_P200010_S013_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S013C.pdf|Guardant360_CDx_P200010_S013_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S014B.pdf|Guardant360_CDx_P200010_S014_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S014C.pdf|Guardant360_CDx_P200010_S014_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S015B.pdf|Guardant360_CDx_P200010_S015_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S015C.pdf|Guardant360_CDx_P200010_S015_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S016B.pdf|Guardant360_CDx_P200010_S016_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S016C.pdf|Guardant360_CDx_P200010_S016_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S017B.pdf|Guardant360_CDx_P200010_S017_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S017C.pdf|Guardant360_CDx_P200010_S017_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S018B.pdf|Guardant360_CDx_P200010_S018_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S018C.pdf|Guardant360_CDx_P200010_S018_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S019B.pdf|Guardant360_CDx_P200010_S019_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S019C.pdf|Guardant360_CDx_P200010_S019_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S020B.pdf|Guardant360_CDx_P200010_S020_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S020C.pdf|Guardant360_CDx_P200010_S020_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S021B.pdf|Guardant360_CDx_P200010_S021_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S021C.pdf|Guardant360_CDx_P200010_S021_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S022B.pdf|Guardant360_CDx_P200010_S022_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S022C.pdf|Guardant360_CDx_P200010_S022_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S023B.pdf|Guardant360_CDx_P200010_S023_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S023C.pdf|Guardant360_CDx_P200010_S023_Technical.pdf|Liquid_Biopsy
+
+# RESOLUTION_ctDx_FIRST (P210040) - 1 original + 1 supplements
+https://www.accessdata.fda.gov/cdrh_docs/pdf21/P210040B.pdf|RESOLUTION_ctDx_FIRST_P210040_Original_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf21/P210040S001B.pdf|RESOLUTION_ctDx_FIRST_P210040_S001_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf21/P210040S001C.pdf|RESOLUTION_ctDx_FIRST_P210040_S001_Technical.pdf|Liquid_Biopsy
+
+# NGS_Device_P200006 (P200006) - 1 original + 4 supplements
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200006B.pdf|NGS_Device_P200006_P200006_Original_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200006S001B.pdf|NGS_Device_P200006_P200006_S001_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200006S001C.pdf|NGS_Device_P200006_P200006_S001_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200006S002B.pdf|NGS_Device_P200006_P200006_S002_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200006S002C.pdf|NGS_Device_P200006_P200006_S002_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200006S003B.pdf|NGS_Device_P200006_P200006_S003_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200006S003C.pdf|NGS_Device_P200006_P200006_S003_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200006S004B.pdf|NGS_Device_P200006_P200006_S004_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200006S004C.pdf|NGS_Device_P200006_P200006_S004_Technical.pdf|Liquid_Biopsy
+
+# NGS_Device_P200016 (P200016) - 1 original + 2 supplements
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200016B.pdf|NGS_Device_P200016_P200016_Original_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200016S001B.pdf|NGS_Device_P200016_P200016_S001_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200016S001C.pdf|NGS_Device_P200016_P200016_S001_Technical.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200016S002B.pdf|NGS_Device_P200016_P200016_S002_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200016S002C.pdf|NGS_Device_P200016_P200016_S002_Technical.pdf|Liquid_Biopsy
 
 # PCR COMPANION DIAGNOSTICS
 https://www.accessdata.fda.gov/cdrh_docs/pdf11/P110020b.pdf|cobas_4800_BRAF_V600_P110020_SSED.pdf|PCR_Companion_Diagnostics
@@ -56,12 +467,6 @@ https://www.accessdata.fda.gov/cdrh_docs/pdf/P980018S010b.pdf|HercepTest_P980018
 # FISH COMPANION DIAGNOSTICS
 https://www.accessdata.fda.gov/cdrh_docs/pdf/P980024S001c.pdf|PathVysion_HER2_P980024_S001_Technical_Info.pdf|FISH_Companion_Diagnostics
 
-# LIQUID BIOPSY TESTS
-https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010B.pdf|Guardant360_CDx_P200010_Original_SSED.pdf|Liquid_Biopsy
-https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S008C.pdf|Guardant360_CDx_P200010_S008_Technical_Info.pdf|Liquid_Biopsy
-https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S010B.pdf|Guardant360_CDx_P200010_S010_SSED.pdf|Liquid_Biopsy
-https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032C.pdf|FoundationOne_Liquid_CDx_P190032_Technical_Info.pdf|Liquid_Biopsy
-
 # COLORECTAL CANCER SCREENING
 https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230043B.pdf|Cologuard_Plus_P230043_SSED.pdf|Colorectal_Screening
 
@@ -72,3 +477,6 @@ https://www.accessdata.fda.gov/cdrh_docs/reviews/K213883.pdf|Hamamatsu_NanoZoome
 https://www.accessdata.fda.gov/cdrh_docs/reviews/K232879.pdf|Roche_VENTANA_DP200_K232879_510k_Summary.pdf|Digital_Pathology_Systems
 https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN200080.pdf|Paige_Prostate_DEN200080_De_Novo_Summary.pdf|Digital_Pathology_Systems
 https://www.accessdata.fda.gov/cdrh_docs/reviews/k130010.pdf|Prosigna_PAM50_K130010_510k_Summary.pdf|Digital_Pathology_Systems
+
+# TOTAL URLS IN THIS FILE: 407
+# Expected successful downloads: ~50-100 (many supplements don't have public SSEDs)
