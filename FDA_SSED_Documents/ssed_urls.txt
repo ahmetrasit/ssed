@@ -1,0 +1,50 @@
+# FDA SSED Documents - Direct Download URLs
+# Format: URL|OutputFilename|Category
+#
+# Usage with wget:
+#   while IFS='|' read -r url filename category; do
+#     [[ "$url" =~ ^#.*$ ]] && continue
+#     mkdir -p "$category"
+#     wget -O "$category/$filename" "$url"
+#   done < ssed_urls.txt
+#
+# Usage with curl:
+#   while IFS='|' read -r url filename category; do
+#     [[ "$url" =~ ^#.*$ ]] && continue
+#     mkdir -p "$category"
+#     curl -o "$category/$filename" "$url"
+#   done < ssed_urls.txt
+
+# NGS PANELS
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/p170019b.pdf|FoundationOne_CDx_P170019_Original_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S029B.pdf|FoundationOne_CDx_P170019_S029_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S048B.pdf|FoundationOne_CDx_P170019_S048_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/p160045b.pdf|Oncomine_Dx_Target_P160045_Original_SSED.pdf|NGS_Panels
+https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230011C.pdf|TruSight_Oncology_Comprehensive_P230011_Technical_Info.pdf|NGS_Panels
+
+# PCR COMPANION DIAGNOSTICS
+https://www.accessdata.fda.gov/cdrh_docs/pdf11/P110020b.pdf|cobas_4800_BRAF_V600_P110020_SSED.pdf|PCR_Companion_Diagnostics
+https://www.accessdata.fda.gov/cdrh_docs/pdf11/P110020c.pdf|cobas_4800_BRAF_V600_P110020_Technical_Info.pdf|PCR_Companion_Diagnostics
+
+# IHC COMPANION DIAGNOSTICS
+https://www.accessdata.fda.gov/cdrh_docs/pdf/P980018S010b.pdf|HercepTest_P980018_S010_SSED.pdf|IHC_Companion_Diagnostics
+
+# FISH COMPANION DIAGNOSTICS
+https://www.accessdata.fda.gov/cdrh_docs/pdf/P980024S001c.pdf|PathVysion_HER2_P980024_S001_Technical_Info.pdf|FISH_Companion_Diagnostics
+
+# LIQUID BIOPSY TESTS
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010B.pdf|Guardant360_CDx_P200010_Original_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S008C.pdf|Guardant360_CDx_P200010_S008_Technical_Info.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S010B.pdf|Guardant360_CDx_P200010_S010_SSED.pdf|Liquid_Biopsy
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032C.pdf|FoundationOne_Liquid_CDx_P190032_Technical_Info.pdf|Liquid_Biopsy
+
+# COLORECTAL CANCER SCREENING
+https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230043B.pdf|Cologuard_Plus_P230043_SSED.pdf|Colorectal_Screening
+
+# DIGITAL PATHOLOGY SYSTEMS
+https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN160056.pdf|Philips_IntelliSite_DEN160056_De_Novo_Summary.pdf|Digital_Pathology_Systems
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/DEN160056.pdf|Philips_IntelliSite_DEN160056_Decision_Summary.pdf|Digital_Pathology_Systems
+https://www.accessdata.fda.gov/cdrh_docs/reviews/K213883.pdf|Hamamatsu_NanoZoomer_S360MD_K213883_510k_Summary.pdf|Digital_Pathology_Systems
+https://www.accessdata.fda.gov/cdrh_docs/reviews/K232879.pdf|Roche_VENTANA_DP200_K232879_510k_Summary.pdf|Digital_Pathology_Systems
+https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN200080.pdf|Paige_Prostate_DEN200080_De_Novo_Summary.pdf|Digital_Pathology_Systems
+https://www.accessdata.fda.gov/cdrh_docs/reviews/k130010.pdf|Prosigna_PAM50_K130010_510k_Summary.pdf|Digital_Pathology_Systems
