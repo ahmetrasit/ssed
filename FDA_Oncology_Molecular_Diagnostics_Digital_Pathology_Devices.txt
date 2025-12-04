@@ -1,0 +1,1235 @@
+================================================================================
+FDA AUTHORIZED ONCOLOGY MOLECULAR DIAGNOSTICS AND DIGITAL PATHOLOGY DEVICES
+Comprehensive List - Class II and Class III Devices
+All Regulatory Pathways (PMA, 510(k), De Novo)
+Including Supplements
+================================================================================
+
+Compiled: December 4, 2025
+Document Purpose: Comprehensive listing of FDA authorized oncology molecular
+diagnostics and digital pathology medical devices for regulatory affairs
+professionals
+
+================================================================================
+TABLE OF CONTENTS
+================================================================================
+
+SECTION 1: NEXT-GENERATION SEQUENCING (NGS) PANELS
+SECTION 2: COMPANION DIAGNOSTICS - PCR BASED
+SECTION 3: COMPANION DIAGNOSTICS - IMMUNOHISTOCHEMISTRY (IHC)
+SECTION 4: COMPANION DIAGNOSTICS - FLUORESCENCE IN SITU HYBRIDIZATION (FISH)
+SECTION 5: LIQUID BIOPSY TESTS
+SECTION 6: COLORECTAL CANCER SCREENING TESTS
+SECTION 7: PROGNOSTIC GENE EXPRESSION TESTS
+SECTION 8: DIGITAL PATHOLOGY - WHOLE SLIDE IMAGING SYSTEMS
+SECTION 9: DIGITAL PATHOLOGY - AI-POWERED DIAGNOSTIC SYSTEMS
+
+================================================================================
+SECTION 1: NEXT-GENERATION SEQUENCING (NGS) PANELS - TISSUE BASED
+================================================================================
+
+1. FOUNDATIONONE CDx (F1CDx)
+   Manufacturer: Foundation Medicine, Inc., Cambridge, MA (Roche subsidiary)
+
+   Original Approval:
+   - PMA Number: P170019
+   - Date: November 30, 2017
+   - Device Class: III
+   - Regulatory Pathway: PMA (Premarket Approval)
+   - Breakthrough Device Status: June 15, 2016
+
+   Device Description:
+   Next-generation sequencing oncology panel for somatic or germline variant
+   detection. Detects genetic mutations in 324 genes and two genomic signatures
+   in any solid tumor type. Comprehensive genomic profiling assay using DNA
+   from formalin-fixed, paraffin-embedded (FFPE) tumor tissue.
+
+   Indications:
+   Companion diagnostic for multiple cancer types including non-small cell lung
+   cancer, melanoma, breast cancer, colorectal cancer, cholangiocarcinoma,
+   prostate cancer, ovarian cancer, and solid tumors with specific biomarkers.
+
+   Links:
+   - Original SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf17/p170019b.pdf
+   - FDA Device Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P170019
+   - FDA Approval Announcement: https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-marketing-approval-foundationone-cdx-in-vitro-diagnostic
+
+   SUPPLEMENTS (Listed as Individual Items):
+
+   a) P170019/S014
+      - Date: [See FDA website for specific date]
+      - Indication: Expanded companion diagnostic claims
+      - Link: https://www.fda.gov/medical-devices/recently-approved-devices/foundationone-cdx-p170019s014
+
+   b) P170019/S015
+      - Date: [See FDA website for specific date]
+      - Indication: Additional companion diagnostic claims
+      - Link: https://cacmap.fda.gov/medical-devices/recently-approved-devices/foundationone-cdx-p170019s015
+
+   c) P170019/S029
+      - Date: [See FDA website for specific date]
+      - Indication: Expanded use with additional therapies
+      - SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S029B.pdf
+      - Link: https://www.fda.gov/medical-devices/recently-approved-devices/foundationone-cdx-p170019s029
+
+   d) P170019/S048
+      - Date: November 16, 2023
+      - Indication: Four additional companion diagnostic claims
+      - SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S048B.pdf
+      - Link: https://www.fda.gov/medical-devices/recently-approved-devices/foundationone-cdx-f1cdx-p170019s048
+
+   Note: F1CDx has received numerous supplements for additional companion
+   diagnostic indications. Check FDA PMA database for complete list.
+
+--------------------------------------------------------------------------------
+
+2. ONCOMINE DX TARGET TEST
+   Manufacturer: Thermo Fisher Scientific (Life Technologies Corporation)
+
+   Original Approval:
+   - PMA Number: P160045
+   - Date: 2017 (First FDA-approved targeted NGS-based companion diagnostic)
+   - Device Class: III
+   - Regulatory Pathway: PMA
+
+   Device Description:
+   Targeted next-generation sequencing-based companion diagnostic test for
+   non-small cell lung cancer (NSCLC). Detects genetic variations in BRAF,
+   EGFR, and IDH1 genes and chromosome abnormalities (translocations) in ROS1
+   and RET genes. Uses Ion Torrent technology.
+
+   Indications:
+   Originally approved for NSCLC, expanded to include cholangiocarcinoma, brain
+   tumors (astrocytoma and oligodendroglioma), and thyroid cancer.
+
+   Links:
+   - Original SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf16/p160045b.pdf
+   - FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=p160045
+
+   SUPPLEMENTS (Listed as Individual Items):
+
+   a) P160045/S031
+      - Date: September 21, 2022
+      - Indication: Expanded for NSCLC and thyroid cancer testing for RET
+        translocations; medullary thyroid cancer for RET mutations
+      - Link: https://www.fda.gov/medical-devices/recently-approved-devices/oncomine-dx-target-test-p160045s031
+      - FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=p160045s031
+
+   b) P160045/S035
+      - Date: August 11, 2022
+      - Indication: Identify NSCLC patients eligible for ENHERTU
+        (fam-trastuzumab deruxtecan-nxki)
+      - Link: https://www.fda.gov/medical-devices/recently-approved-devices/oncominetm-dx-target-test-p160045s035
+
+   c) P160045/S046
+      - Date: October 17, 2024
+      - Indication: Expanded for IDH1 and IDH2 mutations in astrocytoma and
+        oligodendroglioma brain tumors for treatment with VORANIGO (vorasidenib)
+      - Link: https://www.fda.gov/medical-devices/recently-approved-devices/oncomine-dx-target-test-p160045s046
+
+--------------------------------------------------------------------------------
+
+3. TRUSIGHT ONCOLOGY COMPREHENSIVE (TSO Comprehensive)
+   Manufacturer: Illumina, Inc.
+
+   Original Approval:
+   - PMA Number: P230011
+   - Date: August 2024
+   - Device Class: III
+   - Regulatory Pathway: PMA
+   - Breakthrough Device Designation: Yes
+
+   Device Description:
+   First FDA-approved distributable comprehensive genomic profiling in vitro
+   diagnostic kit with pan-cancer companion diagnostic claims. Targeted NGS
+   panel interrogating 517 genes using NextSeq 550Dx instrument. Detects SNVs,
+   MNVs, insertions, deletions from DNA; fusions in 24 genes and splice
+   variants from RNA. Reports Tumor Mutational Burden (TMB) score.
+
+   Indications:
+   Pan-cancer comprehensive genomic profiling for solid malignant neoplasms.
+   Two companion diagnostic claims:
+   - NTRK gene fusions for larotrectinib (Vitrakvi)
+   - RET fusion-positive NSCLC for selpercatinib (Retevmo)
+
+   Links:
+   - Technical Information: https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230011C.pdf
+   - Product Website: https://www.illumina.com/products/by-type/clinical-research-products/trusight-oncology-500.html
+   - FDA Announcement: https://www.illumina.com/company/news-center/press-releases/press-release-details.html?newsid=cca694db-8cc7-4b6a-9449-38ccd9329816
+
+--------------------------------------------------------------------------------
+
+4. TEMPUS xT CDx
+   Manufacturer: Tempus Labs, Inc., Chicago, IL
+
+   Original Approval:
+   - PMA Number: [P-number to be confirmed]
+   - Date: May 1, 2023
+   - Device Class: III
+   - Regulatory Pathway: PMA
+
+   Device Description:
+   648-gene next-generation sequencing test for solid tumor profiling.
+   Comprehensive genomic profiling assay that includes microsatellite
+   instability (MSI) status determination. Analyzes DNA from FFPE tumor tissue.
+
+   Indications:
+   Solid tumor profiling with companion diagnostic claims for colorectal cancer
+   patients. Detects MSI-high status and actionable mutations across multiple
+   cancer types.
+
+   Links:
+   - Press Release: https://www.tempus.com/news/tempus-receives-u-s-fda-approval-for-xt-cdx-a-ngs-based-in-vitro-diagnostic-device/
+   - Additional Coverage: https://www.biospace.com/article/releases/tempus-receives-u-s-fda-approval-for-xt-cdx-a-ngs-based-in-vitro-diagnostic-device/
+
+--------------------------------------------------------------------------------
+
+5. CARIS MI CANCER SEEK
+   Manufacturer: Caris Life Sciences
+
+   Original Approval:
+   - Date: November 2024 (December announcement)
+   - Device Class: III
+   - Regulatory Pathway: PMA (presumed)
+
+   Device Description:
+   NGS-based tumor profiling assay with seven companion diagnostic indications.
+   Combines whole exome and transcriptome sequencing. Detects microsatellite
+   instability (MSI) and tumor mutational burden in solid tumors.
+
+   Indications:
+   Identifies adult and pediatric patients (ages 1-22 years) who may benefit
+   from targeted therapies across multiple cancer types including breast,
+   colorectal, melanoma, endometrial carcinoma, and non-small cell lung cancer.
+
+   Companion diagnostics for:
+   - MSI-high disease: pembrolizumab and dostarlimab-gxly (Jemperli)
+   - Multiple targeted therapies across different tumor types
+
+   Links:
+   - Press Coverage: https://www.onclive.com/view/mi-cancer-seek-receives-fda-approval-as-companion-diagnostic-for-targeted-therapy-across-tumor-types
+
+================================================================================
+SECTION 2: COMPANION DIAGNOSTICS - PCR BASED
+================================================================================
+
+6. COBAS EGFR MUTATION TEST v2
+   Manufacturer: Roche Molecular Systems, Inc.
+
+   Original Approval:
+   - PMA Number: P150044
+   - Date: June 1, 2016
+   - Device Class: III
+   - Regulatory Pathway: PMA (Priority Review)
+
+   Device Description:
+   Real-time PCR test for qualitative detection of defined mutations in exons
+   18, 19, 20, and 21 of the EGFR gene in NSCLC patients. Detects 42 defined
+   mutations including L858R, exon 19 deletions, and T790M mutations. Uses
+   FFPE tissue samples.
+
+   Indications:
+   Companion diagnostic for EGFR tyrosine kinase inhibitors (TKIs) including:
+   - Gefitinib (IRESSA) for first-line treatment
+   - Multiple EGFR TKIs for NSCLC
+
+   First companion diagnostic to receive therapeutic class labeling via
+   180-day labeling supplement.
+
+   Links:
+   - FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150044
+   - FDA Approval: https://www.fda.gov/drugs/resources-information-approved-drugs/cobas-egfr-mutation-test-v2
+
+--------------------------------------------------------------------------------
+
+7. COBAS 4800 BRAF V600 MUTATION TEST
+   Manufacturer: Roche Molecular Diagnostics
+
+   Original Approval:
+   - PMA Number: P110020
+   - Date: 2011
+   - Device Class: III
+   - Regulatory Pathway: PMA
+
+   Device Description:
+   Real-time PCR-based in vitro diagnostic assay for qualitative detection of
+   BRAF V600 mutations in DNA extracted from FFPE melanoma tissue. Detects
+   BRAF codon 600 mutations including V600E, V600D, V600E2, and V600K
+   (approximately 90% of all BRAF mutations in melanoma).
+
+   Indications:
+   Companion diagnostic for melanoma patients being considered for treatment
+   with:
+   - ZELBORAF (vemurafenib)
+   - COTELLIC (cobimetinib) in combination with vemurafenib
+
+   Links:
+   - Technical Information: https://www.accessdata.fda.gov/cdrh_docs/pdf11/P110020c.pdf
+   - SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf11/P110020b.pdf
+   - FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P110020S016
+   - Product Page: https://diagnostics.roche.com/us/en/products/lab/cobas-4800-braf-v600-mutation-test-rmd-4800-braf-002.html
+
+--------------------------------------------------------------------------------
+
+8. THERASCREEN KRAS RGQ PCR KIT
+   Manufacturer: QIAGEN GmbH / QIAGEN Manchester, Ltd.
+
+   Original Approval:
+   - Date: May 2014 (second colorectal drug pairing)
+   - Device Class: III
+   - Regulatory Pathway: PMA
+
+   Device Description:
+   Real-time PCR companion diagnostic test for qualitative detection of 7
+   mutations in codons 12 and 13 of the human KRAS gene (G12A, G12D, G12R,
+   G12C, G12S, G12V, G13D). Uses DNA extracted from FFPE tissue with Rotor-
+   Gene Q MDx instrument. Workflow can be completed in ~8 hours.
+
+   Indications:
+   Companion diagnostic to identify NSCLC patients for treatment with:
+   - LUMAKRAS (sotorasib)
+   - KRAZATI (adagrasib)
+
+   Also approved for metastatic colorectal cancer patients for treatment with
+   Vectibix (panitumumab).
+
+   Links:
+   - Product Information: https://www.qiagen.com/us/products/diagnostics-and-clinical-research/oncology/therascreen-solid-tumor/therascreen-kras-rgq-pcr-kit-us
+   - Press Release: https://www.prnewswire.com/news-releases/qiagen-receives-fda-approval-of-therascreen-kras-rgq-pcr-kit-paired-with-second-colorectal-cancer-drug-260468421.html
+
+================================================================================
+SECTION 3: COMPANION DIAGNOSTICS - IMMUNOHISTOCHEMISTRY (IHC)
+================================================================================
+
+9. HERCEPTEST (DAKO)
+   Manufacturer: Dako (Agilent Technologies)
+
+   Original Approval:
+   - PMA Number: P980018
+   - Date: September 25, 1998
+   - Device Class: III
+   - Regulatory Pathway: PMA
+
+   Historical Significance:
+   First companion diagnostic ever approved by the FDA - landmark achievement
+   in personalized medicine.
+
+   Device Description:
+   Semi-quantitative immunohistochemical assay to determine HER2
+   overexpression in breast cancer tissues routinely processed for
+   histological evaluation. Uses formalin-fixed, paraffin-embedded tissue.
+
+   Indications:
+   Aid in assessment of breast cancer patients for whom the following
+   treatments are being considered:
+   - Herceptin (trastuzumab) - co-approved 1998
+   - Perjeta (pertuzumab) - expanded indication 2012
+
+   SUPPLEMENTS:
+
+   a) P980018/S010
+      - Date: 2012
+      - Indication: Expanded for use with pertuzumab assessment
+      - SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf/P980018S010b.pdf
+
+   Links:
+   - FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=p980018
+   - Historical Context: https://pmc.ncbi.nlm.nih.gov/articles/PMC8343532/
+
+--------------------------------------------------------------------------------
+
+10. VENTANA HER2/neu (4B5) - PATHWAY
+    Manufacturer: Ventana Medical Systems, Inc. (Roche subsidiary)
+
+    Approval:
+    - Device Class: III
+    - Regulatory Pathway: PMA
+
+    Device Description:
+    Pre-diluted rabbit monoclonal primary antibody (clone 4B5) for detection
+    and semi-quantitative assessment of HER2 protein in FFPE breast and
+    gastric cancer tissue. Used with BenchMark IHC/ISH slide staining
+    instrument. Standardizes all IHC processes and reduces human error.
+
+    Indications:
+    Companion diagnostic for HER2-targeted therapies in:
+    - Breast cancer
+    - Gastric cancer
+
+    Additional Applications:
+    - HER2-low metastatic breast cancer (expanded 2022)
+    - HER2-ultralow metastatic breast cancer (expanded January 2025)
+
+    Links:
+    - HER2-low approval: https://diagnostics.roche.com/global/en/news-listing/2022/roche-receives-fda-approval-for-first-companion-diagnostic-to-id.html
+    - HER2-ultralow approval: https://www.roche.com/media/releases/med-cor-2025-01-31
+
+--------------------------------------------------------------------------------
+
+11. PD-L1 IHC 22C3 pharmDx
+    Manufacturer: Dako (Agilent Technologies)
+
+    Approval:
+    - Device Class: III
+    - Regulatory Pathway: PMA
+    - Date: Multiple approvals starting ~2015
+
+    Device Description:
+    Immunohistochemical assay using monoclonal mouse anti-PD-L1, clone 22C3
+    to detect PD-L1 protein in FFPE tissue. Uses BenchMark platforms. First
+    PD-L1 companion diagnostic assay approved in the United States.
+
+    Indications:
+    Companion diagnostic for pembrolizumab (Keytruda) in multiple cancer types:
+    - Non-small cell lung cancer (NSCLC)
+    - Gastric/gastroesophageal junction adenocarcinoma
+    - Esophageal squamous cell carcinoma
+    - Cervical cancer
+    - Squamous cell carcinoma of head and neck (SCCHN)
+    - Triple-negative breast cancer (TNBC)
+    - Urothelial carcinoma (UC) - cisplatin-ineligible
+
+    Multiple expanded indications approved via PMA supplements.
+
+    Links:
+    - Training Program: https://pdl122c3-learning.dako.com/
+    - FDA Approval News: https://www.cancernetwork.com/view/fda-approves-pd-l1-ihc-22c3-pharmdx-as-companion-diagnostic-for-pembrolizumab
+
+--------------------------------------------------------------------------------
+
+12. PD-L1 IHC 28-8 pharmDx
+    Manufacturer: Dako (Agilent Technologies)
+
+    Approval:
+    - Device Class: III
+    - Regulatory Pathway: PMA
+
+    Device Description:
+    Immunohistochemical assay for detection of PD-L1 protein. High analytical
+    concordance with 22C3 assay, supporting potential interchangeability.
+
+    Indications:
+    Companion/complementary diagnostic for checkpoint inhibitor therapies.
+
+    Links:
+    - Concordance Study: https://pmc.ncbi.nlm.nih.gov/articles/PMC7513267/
+
+--------------------------------------------------------------------------------
+
+13. VENTANA PD-L1 (SP142) ASSAY
+    Manufacturer: Ventana Medical Systems, Inc. (Roche)
+
+    Approval:
+    - Device Class: III
+    - Regulatory Pathway: PMA
+
+    Device Description:
+    Qualitative immunohistochemical assay using rabbit monoclonal anti-PD-L1
+    clone SP142. Assesses PD-L1 protein in tumor cells and tumor-infiltrating
+    immune cells in FFPE tissues. Stained on BenchMark ULTRA instrument.
+
+    Indications:
+    Companion diagnostic for TECENTRIQ (atezolizumab) in:
+    - NSCLC (cutoff: ≥50% tumor cells or ≥10% immune cells)
+    - Other solid tumors
+
+    Links:
+    - Product Page: https://diagnostics.roche.com/global/en/products/tests/ventana-pd-l1-_sp142-assay1.html
+
+--------------------------------------------------------------------------------
+
+14. VENTANA PD-L1 (SP263) ASSAY
+    Manufacturer: Ventana Medical Systems, Inc. (Roche)
+
+    Approval:
+    - Device Class: III
+    - Regulatory Pathway: PMA
+
+    Device Description:
+    Immunohistochemical assay for PD-L1 detection using clone SP263.
+
+    Indications:
+    Companion diagnostic for durvalumab across multiple tumor types.
+
+================================================================================
+SECTION 4: COMPANION DIAGNOSTICS - FLUORESCENCE IN SITU HYBRIDIZATION (FISH)
+================================================================================
+
+15. VYSIS ALK BREAK APART FISH PROBE KIT
+    Manufacturer: Abbott Molecular Inc.
+
+    Original Approval:
+    - PMA Number: P110012
+    - Date: August 2011 (co-approved with XALKORI/crizotinib)
+    - Device Class: III
+    - Regulatory Pathway: PMA
+
+    Device Description:
+    Fluorescence in situ hybridization (FISH) probe for detection of
+    rearrangements of the anaplastic lymphoma kinase (ALK) gene on chromosome
+    2p23 in NSCLC specimens. Identifies the 3-5% of NSCLC patients with ALK
+    rearrangements.
+
+    Indications:
+    Companion diagnostic to identify ALK-positive NSCLC patients for treatment
+    with:
+    - XALKORI (crizotinib)
+    - Other ALK inhibitors
+
+    Links:
+    - FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=p110012
+    - Press Release: https://www.prnewswire.com/news-releases/fda-approves-xalkori-with-companion-diagnostic-for-a-type-of-late-stage-lung-cancer-128484413.html
+
+--------------------------------------------------------------------------------
+
+16. PATHVYSION HER-2 DNA PROBE KIT
+    Manufacturer: Abbott Molecular (Vysis)
+
+    Original Approval:
+    - PMA Number: P980024
+    - Date: [Original approval late 1990s]
+    - Device Class: III
+    - Regulatory Pathway: PMA
+
+    Device Description:
+    FISH assay to detect amplification of the HER-2/neu gene in FFPE breast
+    cancer tissue specimens. Specimens with amplification show ratio ≥2.0;
+    normal specimens show ratio <2.0.
+
+   Indications:
+   - Prognostic aid for stage II, node-positive breast cancer
+   - Predict disease-free and overall survival in patients treated with
+     adjuvant CAF chemotherapy
+   - Aid in assessment of patients for HERCEPTIN (trastuzumab) treatment
+
+   SUPPLEMENTS:
+
+   a) P980024/S001
+      - SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf/P980024S001c.pdf
+
+   Links:
+   - FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=p980024
+   - Product Page: https://www.molecular.abbott/int/en/products/oncology/pathvysion-her-2-dna-probe-kit-II
+
+================================================================================
+SECTION 5: LIQUID BIOPSY TESTS (CIRCULATING CELL-FREE DNA)
+================================================================================
+
+17. GUARDANT360 CDx
+    Manufacturer: Guardant Health, Inc., Redwood City, CA
+
+    Original Approval:
+    - PMA Number: P200010
+    - Date: August 7, 2020
+    - Device Class: III
+    - Regulatory Pathway: PMA
+
+    Historical Significance:
+    First FDA-approved liquid biopsy for comprehensive tumor mutation profiling
+    across all solid cancers.
+
+    Device Description:
+    Blood-based next-generation sequencing test for detection of genetic
+    alterations in 55 genes using circulating cell-free DNA (cfDNA) from
+    peripheral blood. Validated on >7,500 samples and 30,000 unique variants
+    across 30+ cancer types.
+
+    Indications:
+    Comprehensive genomic profiling in patients with any solid malignant
+    neoplasm. Multiple companion diagnostic indications including:
+    - Osimertinib (Tagrisso) for NSCLC
+    - Sotorasib (LUMAKRAS) for KRAS G12C-mutated NSCLC (first and only liquid
+      biopsy CDx for KRAS G12C, approved 2021)
+
+   SUPPLEMENTS (Listed as Individual Items):
+
+   a) P200010/S008
+      - Technical Information: https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S008C.pdf
+      - Link: https://www.fda.gov/medical-devices/recently-approved-devices/guardant360-cdx-p200010s008
+
+   b) P200010/S010
+      - SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S010B.pdf
+
+   Links:
+   - Original SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010B.pdf
+   - FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P200010
+   - Press Release: https://investors.guardanthealth.com/press-releases/press-releases/2020/Guardant-Health-Guardant360-CDx-First-FDA-Approved-Liquid-Biopsy-for-Comprehensive-Tumor-Mutation-Profiling-Across-All-Solid-Cancers/default.aspx
+
+--------------------------------------------------------------------------------
+
+18. FOUNDATIONONE LIQUID CDx (F1 Liquid CDx)
+    Manufacturer: Foundation Medicine, Inc. (Roche)
+
+    Original Approval:
+    - PMA Number: P190032
+    - Date: August 28, 2020
+    - Device Class: III
+    - Regulatory Pathway: PMA
+
+    Device Description:
+    Comprehensive pan-tumor liquid biopsy test analyzing 324 genes using
+    circulating cell-free DNA (cfDNA) from blood. Reports short variants in
+    311 genes, rearrangements in 8 genes, and copy number alterations in 3
+    genes. Validated on analytical and clinical studies including >7,500
+    samples and 30,000 unique variants across >30 cancer types.
+
+    Indications:
+    Comprehensive genomic profiling for patients with advanced solid cancers.
+    Multiple companion diagnostic indications for targeted therapies.
+
+    SUPPLEMENTS:
+
+    a) P190032/S005
+       - Link: https://www.fda.gov/medical-devices/recently-approved-devices/foundationone-liquid-cdx-f1-liquid-cdx-p190032s005
+
+    Links:
+    - Technical Information: https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032C.pdf
+    - FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P190032
+    - Product Page: https://www.foundationmedicine.com/test/foundationone-liquid-cdx
+    - Press Release: https://www.roche.com/media/releases/med-cor-2020-08-28
+
+================================================================================
+SECTION 6: COLORECTAL CANCER SCREENING TESTS
+================================================================================
+
+19. COLOGUARD
+    Manufacturer: Exact Sciences Corporation, Madison, WI
+
+    Original Approval:
+    - PMA Number: P130017
+    - Date: August 11, 2014
+    - Device Class: III
+    - Regulatory Pathway: PMA
+
+    Historical Significance:
+    First product reviewed under pilot parallel review program jointly
+    conducted by FDA and Centers for Medicare & Medicaid Services (CMS).
+    Received simultaneous FDA approval and CMS preliminary National Coverage
+    Determination.
+
+    Device Description:
+    Non-invasive, multitarget stool DNA (mt-sDNA) screening test for
+    colorectal cancer. Technologically advanced assay detecting DNA markers
+    and occult blood from stool samples.
+
+    Indications:
+    Colorectal cancer screening for adults age 50 years or older at typical
+    average risk.
+
+    Links:
+    - FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=p130017
+    - FDA Review Article: https://www.tandfonline.com/doi/full/10.1586/14737159.2015.1069184
+
+--------------------------------------------------------------------------------
+
+20. COLOGUARD PLUS
+    Manufacturer: Exact Sciences Corporation
+
+    Original Approval:
+    - PMA Number: P230043
+    - Date: October 4, 2024
+    - Device Class: III
+    - Regulatory Pathway: PMA
+
+    Device Description:
+    Next-generation multitarget stool DNA test. In pivotal BLUE-C study with
+    ~19,000 average-risk participants, demonstrated 95% overall cancer
+    sensitivity and 43% sensitivity for advanced precancerous lesions at 94%
+    specificity.
+
+    Indications:
+    Colorectal cancer screening for adults ages 45 and older at average risk
+    (expanded from age 50).
+
+    Links:
+    - SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230043B.pdf
+    - FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P230043
+    - Press Release: https://www.exactsciences.com/newsroom/press-releases/fda-approves-exact-sciences-cologuard-plus-test
+
+--------------------------------------------------------------------------------
+
+21. GUARDANT SHIELD
+    Manufacturer: Guardant Health, Inc.
+
+    Original Approval:
+    - Date: July 29, 2024
+    - Device Class: III
+    - Regulatory Pathway: PMA
+
+    Historical Significance:
+    First blood test approved by FDA as a primary screening option for
+    colorectal cancer. First blood test for CRC screening that meets
+    requirements for Medicare coverage.
+
+    Device Description:
+    Qualitative in vitro diagnostic test for detection of colorectal cancer-
+    derived alterations in cell-free DNA from blood. Based on pivotal ECLIPSE
+    study with 20,000+ patients.
+
+    Clinical Performance:
+    83% sensitivity for CRC detection, 90% specificity for advanced neoplasia.
+
+    Indications:
+    Primary colorectal cancer screening for adults age 45 and older at average
+    risk.
+
+    Links:
+    - Press Release: https://investors.guardanthealth.com/press-releases/press-releases/2024/Guardant-Healths-Shield-Blood-Test-Approved-by-FDA-as-a-Primary-Screening-Option-Clearing-Path-for-Medicare-Reimbursement-and-a-New-Era-of-Colorectal-Cancer-Screening/default.aspx
+    - NEJM Publication Reference: March 14, 2024
+
+--------------------------------------------------------------------------------
+
+22. IDYLLA CDx MSI TEST
+    Manufacturer: Biocartis NV
+
+    Original Approval:
+    - PMA Number: P250005
+    - Date: September 2025
+    - Device Class: III
+    - Regulatory Pathway: PMA
+
+    Historical Significance:
+    First-ever PMA approval for a cartridge-based, fully automated, "sample-
+    to-result" companion diagnostic test.
+
+    Device Description:
+    Fully automated microsatellite instability detection test for colorectal
+    cancer. Cartridge-based system providing sample-to-result workflow.
+
+    Indications:
+    Companion diagnostic to identify MSI-high (MSI-H) colorectal cancer
+    patients who may benefit from:
+    - OPDIVO (nivolumab) alone
+    - OPDIVO + YERVOY (ipilimumab) combination
+
+    Links:
+    - Press Release: https://www.globenewswire.com/news-release/2025/09/15/3150046/0/en/Press-Release-Biocartis-NV-Biocartis-Receives-FDA-Approval-for-the-Idylla-CDx-MSI-Test.html
+
+================================================================================
+SECTION 7: PROGNOSTIC GENE EXPRESSION TESTS
+================================================================================
+
+23. MAMMAPRINT
+    Manufacturer: Agendia, Inc.
+
+    Clearance:
+    - 510(k) Number: K201902
+    - Device Class: II
+    - Regulatory Pathway: 510(k) Clearance
+
+    Historical Significance:
+    First FDA-cleared genomic assay for breast cancer.
+
+    Device Description:
+    70-gene expression signature assay for breast cancer. Analyzes the 70 most
+    important genes associated with breast cancer recurrence. Classifies
+    tumors into good or poor prognosis groups based on risk of distant
+    recurrence at 5 and 10 years.
+
+    Validation:
+    MINDACT trial provides Level 1A medical evidence (highest level) for use
+    in early-stage breast cancer.
+
+    Indications:
+    FDA-cleared for women of all ages with Stage I or Stage II breast cancer,
+    tumor size ≤5.0 cm, lymph node negative.
+
+    Links:
+    - Product Website: https://agendia.com/mammaprint/
+    - MINDACT Trial: https://www.nejm.org/doi/full/10.1056/NEJMoa1602253
+
+--------------------------------------------------------------------------------
+
+24. PROSIGNA (PAM50)
+    Manufacturer: NanoString Technologies (now Veracyte)
+
+    Clearance:
+    - 510(k) Number: K130010
+    - Device Class: II
+    - Regulatory Pathway: 510(k) Clearance
+
+    Device Description:
+    PAM50-based gene expression signature analyzing 50 genes plus 8 reference
+    genes using nCounter Dx Analysis System. Outputs risk of recurrence (ROR)
+    score, risk category, and intrinsic subtype (Luminal A/B, HER2-enriched,
+    Basal-like). Uses FFPE breast tumor tissue.
+
+    Indications:
+    FDA-cleared for post-menopausal women with:
+    - Hormone Receptor-Positive (HR+), lymph node-negative, Stage I or II
+      breast cancer
+    - Hormone Receptor-Positive (HR+), lymph node-positive (1-3 nodes), Stage
+      II breast cancer
+
+    Links:
+    - FDA 510(k): https://www.accessdata.fda.gov/cdrh_docs/reviews/k130010.pdf
+    - Data Sheet: https://www.prosigna.com/wp-content/uploads/2024/11/Prosigna-datasheet-US_v1.0.pdf
+
+--------------------------------------------------------------------------------
+
+25. ONCOTYPE DX TESTS
+    Manufacturer: Genomic Health / Exact Sciences
+
+    Regulatory Status:
+    - Classification: Laboratory Developed Test (LDT)
+    - Regulation: CLIA (Clinical Laboratory Improvement Amendments of 1988)
+    - Note: NOT FDA PMA-approved; operates under CLIA as in-house test
+
+    Device Description:
+    Portfolio of genomic tests for breast, prostate, and colon cancer. Used
+    to guide treatment decisions for more than 1 million cancer patients
+    worldwide.
+
+    Tests Include:
+    - Oncotype DX Breast Recurrence Score
+    - Oncotype DX Genomic Prostate Score
+    - Oncotype DX Colon Recurrence Score
+
+    Links:
+    - Product Website: https://www.exactsciences.com/en-gb/cancer-testing/oncotype-dx-tests
+
+================================================================================
+SECTION 8: DIGITAL PATHOLOGY - WHOLE SLIDE IMAGING SYSTEMS
+================================================================================
+
+26. PHILIPS INTELLISITE PATHOLOGY SOLUTION (PIPS)
+    Manufacturer: Philips Medical Systems
+
+    Original Clearance:
+    - De Novo Number: DEN160056
+    - Date: April 12, 2017
+    - Device Class: II
+    - Regulatory Pathway: De Novo
+
+    Historical Significance:
+    First whole slide imaging (WSI) system cleared by FDA for digital
+    pathology. Established new device classification enabling future 510(k)
+    clearances. Landmark decision for digital pathology field.
+
+    Device Description:
+    Automated digital slide creation, viewing, and management system. Allows
+    pathologists to review and interpret digital images of surgical pathology
+    slides prepared from FFPE tissue, rather than using conventional light
+    microscopy.
+
+    Clinical Validation:
+    Study of ~2,000 surgical pathology cases using tissue from multiple body
+    parts. 4 sites, 27 pathologists, 2,000 cases, 3,400 slides covering 20
+    organs and 54 sub-types, 16,000 reads. Clinical interpretations from PIPS
+    images were comparable to glass slides.
+
+    Indications:
+    Primary diagnostic use for surgical pathology (including oncology
+    specimens) in clinical laboratories.
+
+    Links:
+    - De Novo Summary: https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN160056.pdf
+    - FDA Decision Summary: https://www.accessdata.fda.gov/cdrh_docs/pdf16/DEN160056.pdf
+    - Press Release: https://www.usa.philips.com/a-w/about/news/archive/standard/news/press/2017/20170413-philips-fda-clearance-intellisite-pathology-solution-primary-diagnostic.html
+    - FDA Announcement: https://www.fda.gov/news-events/press-announcements/fda-allows-marketing-first-whole-slide-imaging-system-digital-pathology
+
+--------------------------------------------------------------------------------
+
+27. LEICA APERIO AT2 DX SYSTEM
+    Manufacturer: Leica Biosystems
+
+    Clearance:
+    - 510(k) Clearance
+    - Date: May 2019
+    - Device Class: II
+    - Regulatory Pathway: 510(k) (predicate: Philips IntelliSite)
+
+    Device Description:
+    Whole slide imaging system for digital pathology. One of largest clinical
+    concordance studies ever completed on digital whole slide images -
+    participating pathologists read approximately 16,000 cases.
+
+    Indications:
+    Clinical diagnosis in surgical pathology, including oncology applications.
+
+    Experience:
+    Leica Biosystems has 25 years of experience implementing, integrating,
+    and innovating in digital pathology space, connecting radiology,
+    pathology, surgery, and oncology.
+
+    Links:
+    - Press Release: https://www.prnewswire.com/news-releases/leica-biosystems-receives-fda-510k-clearance-to-market-a-digital-pathology-system-for-primary-diagnosis-300857825.html
+
+--------------------------------------------------------------------------------
+
+28. LEICA APERIO GT 450 DX SCANNER
+    Manufacturer: Leica Biosystems
+
+    Recent Clearances:
+
+    a) April 2024 Clearance:
+    - 510(k) Clearance for Aperio GT 450 DX with both SVS and native DICOM
+    - Device Class: II
+    - High-quality imaging at <32 sec/slide turnaround time
+    - Link: https://www.prnewswire.com/news-releases/leica-biosystems-receives-fda-510k-clearance-for-aperio-gt-450-dx-digital-pathology-system-with-both-svs-and-native-dicom-302128907.html
+
+    b) December 2024 Clearance with HALO AP Dx:
+    - 510(k) clearance for enterprise digital pathology platform HALO AP Dx
+      in conjunction with Aperio GT 450 DX Scanner
+    - Date: December 3, 2024
+    - Link: https://indicalab.com/news/press-release/fda-cleared-digital-pathology/
+
+    Device Description:
+    Proven high-throughput scanning technology with DICOM compatibility for
+    enterprise digital pathology integration.
+
+    Indications:
+    In-vitro diagnostic use for primary diagnosis in clinical pathology
+    laboratories.
+
+--------------------------------------------------------------------------------
+
+29. ROCHE DIGITAL PATHOLOGY Dx (VENTANA DP 200 & DP 600)
+    Manufacturer: Roche / Ventana Medical Systems
+
+    Clearances:
+
+    a) Original Clearance - VENTANA DP 200:
+    - 510(k) Number: K232879
+    - Date: June 14, 2024
+    - Device Class: II
+
+    b) Expanded Clearance - Added VENTANA DP 600:
+    - Date: January 2025
+    - Modification of June 2024 clearance
+
+    Device Description:
+    Complete digital pathology solution including:
+    - VENTANA DP 200 slide scanner
+    - VENTANA DP 600 slide scanner (40x capacity of DP 200)
+    - Roche digital pathology workflow software
+    - Display system
+
+    Both scanners use same scanning technology, providing consistent high-
+    quality images. System aids pathologists in reviewing and interpreting
+    digital images of scanned pathology slides prepared from FFPE tissue.
+
+    Indications:
+    Primary diagnosis of surgical pathology specimens in clinical laboratories.
+
+    Links:
+    - FDA 510(k) Review: https://www.accessdata.fda.gov/cdrh_docs/reviews/K232879.pdf
+    - June 2024 Press Release: https://diagnostics.roche.com/us/en/news-listing/2024/roche-receives-fda-clearance-on-its-digital-pathology-solution-for-diagnostic-use.html
+    - January 2025 Announcement: https://diagnostics.roche.com/global/en/news-listing/2024/roches-momentum-in-digital-pathology-continues-with-fda-clearance-on-its-high-volume-slide-scanner.html
+
+--------------------------------------------------------------------------------
+
+30. HAMAMATSU NANOZOOMER S360MD
+    Manufacturer: Hamamatsu Photonics
+
+    Clearance:
+    - 510(k) Number: K213883
+    - Date: October 2022
+    - Device Class: II
+    - Regulatory Pathway: 510(k)
+
+    Device Description:
+    High-throughput automated digital slide creation, viewing, and management
+    system. WSI method using NanoZoomer S360MD demonstrated non-inferior to
+    glass slide method (overall major discordance rates: 3.5% WSI vs 3.1%
+    glass).
+
+    Indications:
+    Primary diagnosis of surgical pathology slides prepared from FFPE tissue.
+
+    FDA-Cleared Compatible Viewing Platforms:
+    - HALO AP Dx (Indica Labs) - K232833
+    - FullFocus digital pathology viewer (Paige)
+    - PathPresenter Clinical Viewer
+
+    Links:
+    - FDA 510(k) Review: https://www.accessdata.fda.gov/cdrh_docs/reviews/K213883.pdf
+    - Press Release: https://www.hamamatsu.com/us/en/news/products-and-technologies/2022/20221004000000.html
+
+================================================================================
+SECTION 9: DIGITAL PATHOLOGY - AI-POWERED DIAGNOSTIC SYSTEMS
+================================================================================
+
+31. PAIGE PROSTATE (Paige Prostate Detect)
+    Manufacturer: Paige.AI
+
+    Clearance:
+    - De Novo Number: DEN200080
+    - Date: September 2021
+    - Device Class: II
+    - Regulatory Pathway: De Novo
+
+    Historical Significance:
+    First AI-based pathology product to receive FDA approval. Establishes new
+    regulatory classification enabling future AI digital pathology products to
+    use 510(k) pathway.
+
+    Device Description:
+    AI-powered software that generates heatmaps identifying small and rare
+    prostate cancers in whole slide images from prostate core needle biopsies.
+    Uses artificial intelligence to assist pathologists in detecting cancers
+    that may have been missed.
+
+    Clinical Performance:
+    - Improved pathologists' cancer detection on individual slides by average
+      7.3% (from 89.5% to 96.8%)
+    - 70% reduction in false-negative diagnoses
+    - 24% reduction in false-positive diagnoses
+    - Validated at multiple US and European laboratories
+
+    Indications:
+    Identifying prostate tumors that may have been missed by pathologist in
+    initial review. For in-vitro diagnostic use.
+
+    Links:
+    - De Novo Summary: https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN200080.pdf
+    - Press Release: https://www.businesswire.com/news/home/20210922005369/en/Paige-Receives-First-Ever-FDA-Approval-for-AI-Product-in-Digital-Pathology
+    - Coverage: https://www.fiercebiotech.com/medtech/fda-clears-paige-s-ai-as-first-program-to-spot-prostate-cancer-amid-tissue-slides
+
+--------------------------------------------------------------------------------
+
+32. PAIGE AISIGHT Dx PLATFORM
+    Manufacturer: Paige
+
+    Clearance:
+    - 510(k) Clearance
+    - Date: June 2025
+    - Device Class: II
+    - Regulatory Pathway: 510(k)
+
+    Device Description:
+    Digital pathology image management system cleared for use in primary
+    diagnosis in clinical settings. Enterprise-level platform for digital
+    pathology workflow management.
+
+    Recent Expansion:
+    January 2025 - Received additional FDA clearance for FullFocus digital
+    pathology image viewer for use with Hamamatsu NanoZoomer S360MD.
+
+    Links:
+    - Press Release: https://www.pathai.com/news/pathai-receives-fda-clearance-for-aisight-dx-platform-for-primary-diagnosis
+    - January 2025 Expansion: https://www.businesswire.com/news/home/20250114113728/en/Paige-Adds-to-Regulatory-Portfolio-with-New-FDA-Clearance
+
+--------------------------------------------------------------------------------
+
+33. IBEX PROSTATE DETECT (formerly Galen Second Read)
+    Manufacturer: Ibex Medical Analytics
+
+    Clearance:
+    - 510(k) Clearance
+    - Date: February 10, 2025 (announced)
+    - Device Class: II
+    - Regulatory Pathway: 510(k) (predicate: Paige Prostate De Novo)
+
+    Historical Significance:
+    First 510(k) clearance in the AI prostate pathology category established
+    by Paige's De Novo authorization.
+
+    Device Description:
+    AI-powered in vitro diagnostic medical device that generates heatmaps
+    identifying small and rare missed prostatic cancers. Analyzes whole slide
+    images from prostate core needle biopsies.
+
+    Clinical Performance:
+    - 99.6% positive predictive value (PPV) for cancer heatmap accuracy
+    - Identified 13% rate of missed cancers
+    - Validated at multiple US and European laboratories
+
+    Indications:
+    Assist pathologists in detecting prostate cancer that may have been missed
+    in initial evaluation.
+
+    Links:
+    - Press Release: https://www.businesswire.com/news/home/20250210014120/en/Ibex-Medical-Analytics-Receives-First-FDA-510k-Clearance
+    - Coverage: https://www.targetedonc.com/view/fda-grants-510-k-clearance-to-ibex-prostate-detect-ai-for-prostate-cancer
+
+--------------------------------------------------------------------------------
+
+34. INDICA LABS HALO AP Dx PLATFORM
+    Manufacturer: Indica Labs
+
+    Multiple 510(k) Clearances:
+
+    a) With Leica Aperio GT 450 DX:
+    - Date: December 3, 2024
+    - Device Class: II
+    - Link: https://indicalab.com/news/press-release/fda-cleared-digital-pathology/
+
+    b) With Hamamatsu NanoZoomer S360MD:
+    - 510(k) Number: K232833
+    - Date: 2024
+    - Link: https://indicalab.com/news/indica-labs-receives-fda-clearance-for-halo-ap-dx-digital-pathology-platform-for-use-with-hamamatsu-images-acquired-with-the-nanozoomer-s360md-slide-scanner/
+
+    Device Description:
+    Enterprise digital pathology platform for primary diagnosis of surgical
+    pathology slides prepared from FFPE tissue. DICOM-compatible system
+    integrating with multiple scanner platforms.
+
+    Indications:
+    In-vitro diagnostic use for primary pathology diagnosis in clinical
+    laboratories.
+
+================================================================================
+BREAKTHROUGH DEVICE DESIGNATIONS (Not Yet Approved - For Awareness)
+================================================================================
+
+35. HAYSTACK MRD TEST
+    Manufacturer: Quest Diagnostics
+
+    Status:
+    - Breakthrough Device Designation granted: August 2025
+    - PMA application status: Under development
+
+    Device Description:
+    Minimal residual disease (MRD) circulating tumor DNA test using liquid
+    biopsy technology for colorectal cancer surveillance.
+
+    Intended Use:
+    Identifying MRD-positive patients with stage II colorectal cancer
+    following curative-intent surgical treatment.
+
+    Links:
+    - Press Release: https://newsroom.questdiagnostics.com/2025-08-25-FDA-Grants-Breakthrough-Device-Designation-for-Haystack-MRD-Circulating-Tumor-DNA-Test-from-Quest-Diagnostics
+
+--------------------------------------------------------------------------------
+
+36. VENTANA TROP2 (EPR20043) RxDx DEVICE
+    Manufacturer: Roche
+
+    Status:
+    - Breakthrough Device Designation granted: April 2025
+    - First computational pathology companion diagnostic to receive
+      Breakthrough Device Designation
+
+    Device Description:
+    AI-driven computational pathology companion diagnostic device for TROP2
+    assessment in non-small cell lung cancer.
+
+    Links:
+    - Press Release: https://www.roche.com/media/releases/med-cor-2025-04-29
+
+================================================================================
+FDA REGULATORY RESOURCES AND DATABASES
+================================================================================
+
+For comprehensive and up-to-date information on FDA-authorized oncology
+devices, consult the following official FDA resources:
+
+1. FDA Companion Diagnostics List:
+   https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools
+
+2. FDA PMA Database:
+   https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMA/pma.cfm
+
+3. FDA 510(k) Database:
+   https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm
+
+4. FDA Oncology Center of Excellence - Devices:
+   https://www.fda.gov/about-fda/oncology-center-excellence/oncology-therapeutic-and-diagnostic-devices
+
+5. FDA Medical Device Databases:
+   https://www.fda.gov/medical-devices/device-advice-comprehensive-regulatory-assistance/medical-device-databases
+
+6. FDA Breakthrough Devices Program:
+   https://www.fda.gov/medical-devices/how-study-and-market-your-device/breakthrough-devices-program
+
+7. FDA Oncology Regulatory Reviews (Annual Reports):
+   - 2024: https://www.fda.gov/about-fda/2024-oce-annual-report/oncology-regulatory-review-2024
+   - 2023: https://www.fda.gov/about-fda/2023-oce-annual-report/oncology-regulatory-review-2023
+
+================================================================================
+STATISTICAL SUMMARY
+================================================================================
+
+2023 FDA Oncology Device Authorizations:
+- Total: 118 oncology devices
+- IVDs: 61 devices (26 with new indications, 15 with new CDx indications)
+- Radiation oncology and diagnostic imaging: 41 devices
+- Other oncology devices: 16 (including lymph node ID, tumor ablation,
+  biopsy, soft tissue markers, orthopedic devices)
+
+2024 FDA Oncology Device Authorizations:
+- Total: 76 oncology devices
+- Includes multiple AI/ML-based software applications
+- Treatment planning systems and automated contouring software
+
+Device Class Distribution in This Document:
+- Class III (PMA pathway): Majority of molecular diagnostics and companion
+  diagnostics
+- Class II (510(k) pathway): Digital pathology systems, prognostic tests
+- Class II (De Novo pathway): First-in-class devices (Philips IntelliSite,
+  Paige Prostate)
+
+================================================================================
+NOTES FOR REGULATORY PROFESSIONALS
+================================================================================
+
+PMA SUPPLEMENTS:
+This document lists major PMA supplements as individual items. However, many
+devices (especially FoundationOne CDx and Guardant360 CDx) have numerous
+supplements. For complete supplement history, consult the FDA PMA database
+directly using the P-numbers provided.
+
+SSED AVAILABILITY:
+Summary of Safety and Effectiveness Data (SSED) documents are publicly
+available for PMA-approved devices through the FDA website. Links are provided
+where available. For 510(k)-cleared devices, 510(k) summaries are available
+instead of SSEDs.
+
+DEVICE CLASSIFICATION:
+- Class III devices (highest risk): Require PMA approval with extensive
+  clinical data. Most companion diagnostics and NGS panels fall into this
+  category.
+- Class II devices (moderate risk): Most clear through 510(k) pathway
+  demonstrating substantial equivalence to predicate device. Digital pathology
+  systems typically Class II.
+- De Novo pathway: For novel devices with no existing predicate, deemed low-
+  moderate risk. Establishes new device classification.
+
+COMPANION DIAGNOSTIC LABELING:
+Companion diagnostics approved since 2020 may have therapeutic class labeling
+rather than single drug labeling, allowing broader utility across drug classes.
+
+LIQUID BIOPSY EVOLUTION:
+The field has rapidly evolved from tissue-only diagnostics to include
+circulating tumor DNA analysis. Both FoundationOne Liquid CDx and Guardant360
+CDx represent major advances enabling non-invasive comprehensive genomic
+profiling.
+
+DIGITAL PATHOLOGY REGULATORY PATHWAY:
+Philips IntelliSite's 2017 De Novo clearance established the regulatory
+framework, enabling subsequent digital pathology systems to use the 510(k)
+pathway with IntelliSite as predicate.
+
+AI IN DIGITAL PATHOLOGY:
+Paige Prostate's 2021 De Novo authorization similarly established the pathway
+for AI-based digital pathology products, enabling subsequent AI products
+(like Ibex Prostate Detect) to use 510(k) pathway.
+
+================================================================================
+DOCUMENT COMPILATION SOURCES
+================================================================================
+
+This document was compiled from official FDA sources including:
+- FDA PMA database and approval letters
+- FDA 510(k) database and clearance letters
+- FDA Summary of Safety and Effectiveness Data (SSED) documents
+- FDA press announcements and device approval pages
+- FDA Oncology Center of Excellence annual reports
+- Manufacturer press releases and product labeling
+- Peer-reviewed publications validating device performance
+- FDA advisory committee meeting materials
+
+All information current as of December 4, 2025. Regulatory status may change;
+consult FDA databases for most current information.
+
+================================================================================
+END OF DOCUMENT
+================================================================================
+
+For questions or updates to this document, consult the FDA databases listed
+in the Regulatory Resources section or contact device manufacturers directly.
+
+This document is intended for regulatory affairs professionals specializing
+in molecular genetics and digital pathology medical devices. Information
+provided for educational and professional reference purposes.
