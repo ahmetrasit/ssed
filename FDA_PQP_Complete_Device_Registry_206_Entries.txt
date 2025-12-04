@@ -1,0 +1,389 @@
+FDA PRODUCT CODE PQP - COMPLETE NGS ONCOLOGY DEVICE REGISTRY
+================================================================================
+
+Document Purpose:
+  This supplemental document provides a complete listing of all 206 FDA PMA
+  entries (originals + supplements) for Product Code PQP (Next-Generation
+  Sequencing-based oncology companion diagnostics).
+
+Total Base PMAs: 15
+Total Entries (Original + Supplements): 206
+Data Source: FDA PMA Database (pmaExcelReport28.csv)
+Query Date: December 4, 2025
+
+Note: This document complements the main device list which contains detailed
+      information about the 10 primary NGS companion diagnostic devices.
+
+================================================================================
+
+
+SUMMARY TABLE
+================================================================================
+
+Device Name                              | PMA Number | Entries | Supplements
+---------------------------------------|------------|---------|------------
+FoundationOne CDx                        | P170019    | 54      | 53
+Oncomine Dx Target Test                  | P160045    | 44      | 43
+Praxis Extended RAS Panel                | P160038    | 26      | 25
+FoundationOne Liquid CDx                 | P190032    | 24      | 23
+Guardant360 CDx                          | P200010    | 22      | 21
+MI Cancer Seek                           | P240010    | 6       | 5
+P200006 [NGS Device]                     | P200006    | 5       | 4
+TruSight Oncology Comprehensive          | P230011    | 5       | 4
+Oncomine Dx Express Test                 | P240040    | 4       | 3
+myChoice CDx                             | P190014    | 3       | 2
+oncoReveal CDx                           | P200011    | 3       | 2
+P200016 [NGS Device]                     | P200016    | 3       | 2
+Tempus xT CDx                            | P210011    | 3       | 2
+FoundationFocus CDxBRCA                  | P160018    | 2       | 1
+RESOLUTION ctDx FIRST                    | P210040    | 2       | 1
+---------------------------------------|------------|---------|------------
+TOTAL                                    |            | 206     | 191
+
+================================================================================
+
+
+DETAILED DEVICE LISTINGS
+================================================================================
+
+
+1. FOUNDATIONONE CDx (P170019)
+   Manufacturer: Foundation Medicine, Inc. (Roche)
+
+   Total Entries: 54 (1 original + 53 supplements)
+
+   Original Approval:
+   • P170019
+     FDA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019
+     SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf17/p170019b.pdf
+
+   Supplements (53):
+   • P170019S002 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S002
+   • P170019S003 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S003
+   • P170019S004 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S004
+   • P170019S005 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S005
+   • P170019S006 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S006
+   • P170019S007 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S007
+   • P170019S008 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S008
+   • P170019S009 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S009
+   • P170019S010 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S010
+   • P170019S011 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S011
+   • P170019S012 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S012
+   • P170019S013 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S013
+   • P170019S014 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S014
+   • P170019S015 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S015
+   • P170019S016 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S016
+   • P170019S017 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S017
+   • P170019S018 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S018
+   • P170019S019 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S019
+   • P170019S020 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S020
+   • P170019S021 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S021
+   • P170019S022 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S022
+   • P170019S023 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S023
+   • P170019S025 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S025
+   • P170019S026 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S026
+   • P170019S028 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S028
+   • P170019S029 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S029
+     SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S029B.pdf
+   • P170019S030 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S030
+   • P170019S032 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S032
+   • P170019S033 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S033
+   • P170019S034 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S034
+   • P170019S035 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S035
+   • P170019S036 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S036
+   • P170019S037 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S037
+   • P170019S038 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S038
+   • P170019S039 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S039
+   • P170019S040 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S040
+   • P170019S041 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S041
+   • P170019S042 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S042
+   • P170019S043 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S043
+   • P170019S044 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S044
+   • P170019S045 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S045
+   • P170019S046 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S046
+   • P170019S048 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S048
+     SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S048B.pdf
+   • P170019S049 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S049
+   • P170019S050 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S050
+   • P170019S051 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S051
+   • P170019S052 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S052
+   • P170019S053 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S053
+   • P170019S054 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S054
+   • P170019S056 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S056
+   • P170019S058 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S058
+   • P170019S061 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S061
+   • P170019S063 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P170019S063
+
+
+2. ONCOMINE DX TARGET TEST (P160045)
+   Manufacturer: Life Technologies Corporation / Thermo Fisher Scientific
+
+   Total Entries: 44 (1 original + 43 supplements)
+
+   Original Approval:
+   • P160045
+     FDA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045
+     SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf16/p160045b.pdf
+
+   Supplements (43):
+   • P160045S001 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S001
+   • P160045S002 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S002
+   • P160045S003 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S003
+   • P160045S005 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S005
+   • P160045S006 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S006
+   • P160045S008 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S008
+   • P160045S010 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S010
+   • P160045S011 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S011
+   • P160045S012 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S012
+   • P160045S013 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S013
+   • P160045S014 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S014
+   • P160045S015 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S015
+   • P160045S016 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S016
+   • P160045S018 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S018
+   • P160045S019 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S019
+   • P160045S020 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S020
+   • P160045S021 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S021
+   • P160045S022 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S022
+   • P160045S023 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S023
+   • P160045S024 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S024
+   • P160045S025 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S025
+   • P160045S027 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S027
+   • P160045S028 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S028
+   • P160045S029 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S029
+   • P160045S030 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S030
+   • P160045S031 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S031
+   • P160045S034 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S034
+   • P160045S035 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S035
+   • P160045S036 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S036
+   • P160045S037 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S037
+   • P160045S038 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S038
+   • P160045S040 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S040
+   • P160045S041 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S041
+   • P160045S042 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S042
+   • P160045S043 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S043
+   • P160045S044 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S044
+   • P160045S045 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S045
+   • P160045S046 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S046
+   • P160045S047 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S047
+   • P160045S048 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S048
+   • P160045S049 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S049
+   • P160045S050 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S050
+   • P160045S051 - https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160045S051
+
+
+3. PRAXIS EXTENDED RAS PANEL (P160038)
+   Manufacturer: Illumina, Inc.
+
+   Total Entries: 26 (1 original + 25 supplements)
+
+   Original Approval:
+   • P160038
+     FDA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160038
+     SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038B.pdf
+     Technical Info: https://www.accessdata.fda.gov/cdrh_docs/pdf16/p160038c.pdf
+
+   Supplements (25):
+   • P160038S001 through P160038S025 - All supplement FDA pages available
+
+
+4. FOUNDATIONONE LIQUID CDx (P190032)
+   Manufacturer: Foundation Medicine, Inc. (Roche)
+
+   Total Entries: 24 (1 original + 23 supplements)
+
+   Original Approval:
+   • P190032
+     FDA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P190032
+     Technical Info: https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032C.pdf
+
+   Supplements (23):
+   • P190032S001 through P190032S028 (non-consecutive)
+
+
+5. GUARDANT360 CDx (P200010)
+   Manufacturer: Guardant Health, Inc.
+
+   Total Entries: 22 (1 original + 21 supplements)
+
+   Original Approval:
+   • P200010
+     FDA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P200010
+     SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010B.pdf
+
+   Supplements (21):
+   • P200010S008 - https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S008C.pdf
+   • P200010S010 - https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S010B.pdf
+   • Additional supplements: S001, S002, S004-S007, S009, S011, S013-S023
+
+
+6. MI CANCER SEEK (P240010)
+   Manufacturer: Caris Life Sciences
+
+   Total Entries: 6 (1 original + 5 supplements)
+
+   Original Approval:
+   • P240010
+     FDA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P240010
+     SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240010B.pdf
+
+   Supplements (5):
+   • P240010S001 through P240010S005
+
+
+7. NGS DEVICE P200006
+   Manufacturer: [To Be Determined]
+
+   Total Entries: 5 (1 original + 4 supplements)
+
+   • P200006, P200006S001 through P200006S004
+
+
+8. TRUSIGHT ONCOLOGY COMPREHENSIVE (P230011)
+   Manufacturer: Illumina, Inc.
+
+   Total Entries: 5 (1 original + 4 supplements)
+
+   Original Approval:
+   • P230011
+     FDA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P230011
+     Technical Info: https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230011C.pdf
+
+   Supplements (4):
+   • P230011S001, P230011S003, P230011S004, P230011S005
+
+
+9. ONCOMINE DX EXPRESS TEST (P240040)
+   Manufacturer: Life Technologies Corporation / Thermo Fisher Scientific
+
+   Total Entries: 4 (1 original + 3 supplements)
+
+   • P240040, P240040S001 through P240040S003
+
+
+10. MYCHOICE CDx (P190014)
+    Manufacturer: Myriad Genetic Laboratories, Inc.
+
+    Total Entries: 3 (supplements only - original PMA not in PQP list)
+
+    Note: Only supplements S001, S002, S003 appear in PQP database
+
+
+11. ONCOREVEAL CDx (P200011)
+    Manufacturer: Pillar Biosciences
+
+    Total Entries: 3 (1 original + 2 supplements)
+
+    Original Approval:
+    • P200011
+      FDA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P200011
+      SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200011S001B.pdf
+
+    Supplements:
+    • P200011S001, P200011S002
+
+
+12. NGS DEVICE P200016
+    Manufacturer: [To Be Determined]
+
+    Total Entries: 3 (1 original + 2 supplements)
+
+    • P200016, P200016S001, P200016S002
+
+
+13. TEMPUS xT CDx (P210011)
+    Manufacturer: Tempus Labs, Inc.
+
+    Total Entries: 3 (1 original + 2 supplements)
+
+    • P210011, P210011S001, P210011S003
+
+
+14. FOUNDATIONFOCUS CDxBRCA (P160018)
+    Manufacturer: Foundation Medicine, Inc. (Roche)
+
+    Total Entries: 2 (1 original + 1 supplement)
+
+    Original Approval:
+    • P160018
+      FDA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?ID=P160018
+
+    Supplement:
+    • P160018S001 - https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160018S001b.pdf
+
+
+15. RESOLUTION ctDx FIRST (P210040)
+    Manufacturer: Exact Sciences Corporation / Agilent
+
+    Total Entries: 2 (1 original + 1 supplement)
+
+    • P210040, P210040S001
+
+
+================================================================================
+
+NOTES AND OBSERVATIONS
+================================================================================
+
+1. Supplement Distribution:
+   - FoundationOne CDx (P170019) has the most supplements: 53
+   - Oncomine Dx Target (P160045) has 43 supplements
+   - Combined, these two devices account for 96 of the 191 total supplements
+
+2. Missing Devices:
+   - P200006 and P200016 device names need verification
+   - These may be recent approvals or transfers from different product codes
+
+3. SSED Document Availability:
+   - Not all supplements have publicly available SSED documents
+   - Typically only major supplements (new indications, significant changes)
+     receive published SSEDs
+
+4. Regulatory Trend:
+   - High supplement counts indicate active companion diagnostic development
+   - Each supplement typically represents a new drug-CDx pairing approval
+
+5. Product Code Reclassification:
+   - FDA proposed reclassifying PQP devices from Class III to Class II
+   - Proposed rule published November 2025
+   - Would significantly streamline approval pathway for NGS CDx devices
+
+================================================================================
+
+COMPLETE ALPHABETICAL PMA NUMBER INDEX
+================================================================================
+
+P160018, P160018S001
+P160038, P160038S001-S025 (25 supplements)
+P160045, P160045S001-S051 (43 supplements, non-consecutive)
+P170019, P170019S002-S063 (53 supplements, non-consecutive)
+P190014S001-S003 (3 supplements, no original in PQP)
+P190032, P190032S001-S028 (23 supplements, non-consecutive)
+P200006, P200006S001-S004
+P200010, P200010S001-S023 (21 supplements, non-consecutive)
+P200011, P200011S001-S002
+P200016, P200016S001-S002
+P210011, P210011S001, P210011S003
+P210040, P210040S001
+P230011, P230011S001, P230011S003-S005
+P240010, P240010S001-S005
+P240040, P240040S001-S003
+
+================================================================================
+
+DOCUMENT METADATA
+================================================================================
+
+Created: December 4, 2025
+Source Data: FDA PMA Database, Product Code PQP
+Total Devices: 15 base PMAs
+Total Entries: 206 (15 originals + 191 supplements)
+Format Version: 1.0
+Companion Document: FDA_Oncology_Molecular_Diagnostics_Digital_Pathology_Devices.txt
+
+For detailed device information including approval dates, indications, and
+clinical trial data, refer to the main device list document and individual
+FDA PMA approval letters.
+
+================================================================================
+END OF DOCUMENT
+================================================================================
