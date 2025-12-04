@@ -1,0 +1,40 @@
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/p170019b.pdf
+  out=NGS_Panels/FoundationOne_CDx_P170019_Original_SSED.pdf
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S029B.pdf
+  out=NGS_Panels/FoundationOne_CDx_P170019_S029_SSED.pdf
+https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S048B.pdf
+  out=NGS_Panels/FoundationOne_CDx_P170019_S048_SSED.pdf
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/p160045b.pdf
+  out=NGS_Panels/Oncomine_Dx_Target_P160045_Original_SSED.pdf
+https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230011C.pdf
+  out=NGS_Panels/TruSight_Oncology_Comprehensive_P230011_Technical_Info.pdf
+https://www.accessdata.fda.gov/cdrh_docs/pdf11/P110020b.pdf
+  out=PCR_Companion_Diagnostics/cobas_4800_BRAF_V600_P110020_SSED.pdf
+https://www.accessdata.fda.gov/cdrh_docs/pdf11/P110020c.pdf
+  out=PCR_Companion_Diagnostics/cobas_4800_BRAF_V600_P110020_Technical_Info.pdf
+https://www.accessdata.fda.gov/cdrh_docs/pdf/P980018S010b.pdf
+  out=IHC_Companion_Diagnostics/HercepTest_P980018_S010_SSED.pdf
+https://www.accessdata.fda.gov/cdrh_docs/pdf/P980024S001c.pdf
+  out=FISH_Companion_Diagnostics/PathVysion_HER2_P980024_S001_Technical_Info.pdf
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010B.pdf
+  out=Liquid_Biopsy/Guardant360_CDx_P200010_Original_SSED.pdf
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S008C.pdf
+  out=Liquid_Biopsy/Guardant360_CDx_P200010_S008_Technical_Info.pdf
+https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S010B.pdf
+  out=Liquid_Biopsy/Guardant360_CDx_P200010_S010_SSED.pdf
+https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032C.pdf
+  out=Liquid_Biopsy/FoundationOne_Liquid_CDx_P190032_Technical_Info.pdf
+https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230043B.pdf
+  out=Colorectal_Screening/Cologuard_Plus_P230043_SSED.pdf
+https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN160056.pdf
+  out=Digital_Pathology_Systems/Philips_IntelliSite_DEN160056_De_Novo_Summary.pdf
+https://www.accessdata.fda.gov/cdrh_docs/pdf16/DEN160056.pdf
+  out=Digital_Pathology_Systems/Philips_IntelliSite_DEN160056_Decision_Summary.pdf
+https://www.accessdata.fda.gov/cdrh_docs/reviews/K213883.pdf
+  out=Digital_Pathology_Systems/Hamamatsu_NanoZoomer_S360MD_K213883_510k_Summary.pdf
+https://www.accessdata.fda.gov/cdrh_docs/reviews/K232879.pdf
+  out=Digital_Pathology_Systems/Roche_VENTANA_DP200_K232879_510k_Summary.pdf
+https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN200080.pdf
+  out=Digital_Pathology_Systems/Paige_Prostate_DEN200080_De_Novo_Summary.pdf
+https://www.accessdata.fda.gov/cdrh_docs/reviews/k130010.pdf
+  out=Digital_Pathology_Systems/Prosigna_PAM50_K130010_510k_Summary.pdf
