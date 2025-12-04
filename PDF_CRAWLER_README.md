@@ -5,10 +5,11 @@ A Python-based web crawler that systematically visits all pages on a website and
 ## Features
 
 - **Comprehensive Crawling**: Visits all pages on a website within the same domain
+- **Depth Tracking**: Tracks how many levels deep it crawls (default: minimum 2 levels)
 - **PDF Detection**: Automatically identifies and extracts PDF file links
 - **Resume Support**: Save crawler state and resume interrupted crawls
 - **Rate Limiting**: Respectful delays between requests to avoid overwhelming servers
-- **Progress Tracking**: Real-time progress display with statistics
+- **Progress Tracking**: Real-time progress display with depth level statistics
 - **Error Handling**: Gracefully handles network errors and continues crawling
 - **Flexible Output**: Saves all PDF links to a text file with metadata
 
@@ -81,18 +82,57 @@ python3 pdf_crawler.py "https://example.com" --resume --output pdfs.txt
 python3 pdf_crawler.py "https://example.com" --allow-external --max-pages 500
 ```
 
-### 5. Faster Crawling
+### 5. Control Crawl Depth
+
+```bash
+# Ensure at least 3 levels deep (starting page + 2 more levels)
+python3 pdf_crawler.py "https://example.com" --min-depth 3
+
+# Shallow crawl (only starting page and direct links)
+python3 pdf_crawler.py "https://example.com" --min-depth 1 --max-pages 50
+
+# Deep crawl (ensure 4+ levels deep)
+python3 pdf_crawler.py "https://example.com" --min-depth 4 --max-pages 500
+```
+
+### 6. Faster Crawling
 
 ```bash
 # Reduce delay between requests (use responsibly!)
 python3 pdf_crawler.py "https://example.com" --delay 0.5 --max-pages 1000
 ```
 
+## How Depth Tracking Works
+
+The crawler tracks **depth levels** to ensure thorough exploration:
+
+- **Depth 0**: The starting URL you provide
+- **Depth 1**: All pages linked directly from the starting page
+- **Depth 2**: All pages linked from depth 1 pages
+- **Depth 3+**: And so on...
+
+**By default**, the crawler explores at least **2 levels deep**, ensuring it goes beyond just the starting page to discover PDFs that may be hidden on linked pages.
+
+### Example Depth Flow:
+
+```
+Depth 0: https://fda.gov/device/P170019
+  ├─> Depth 1: P170019 Supplement S001 page
+  │     ├─> Depth 2: S001 Technical Info page
+  │     └─> Depth 2: S001 Approval Letter page
+  ├─> Depth 1: P170019 Supplement S002 page
+  │     └─> Depth 2: S002 SSED Document page
+  └─> Depth 1: All Supplements List page
+        └─> Depth 2: Individual supplement pages
+```
+
+This ensures the crawler doesn't just scrape the first page but actually **follows links to discover PDFs deeper in the site structure**.
+
 ## Command-Line Options
 
 ```
-usage: pdf_crawler.py [-h] [--max-pages MAX_PAGES] [--delay DELAY]
-                      [--output OUTPUT] [--resume]
+usage: pdf_crawler.py [-h] [--max-pages MAX_PAGES] [--min-depth MIN_DEPTH]
+                      [--delay DELAY] [--output OUTPUT] [--resume]
                       [--resume-file RESUME_FILE] [--allow-external]
                       url
 
@@ -102,6 +142,7 @@ positional arguments:
 optional arguments:
   -h, --help            Show help message
   --max-pages MAX_PAGES Maximum number of pages to crawl (default: 200)
+  --min-depth MIN_DEPTH Minimum depth to crawl in levels (default: 2)
   --delay DELAY         Delay between requests in seconds (default: 1.0)
   --output OUTPUT       Output file for PDF links (default: pdf_links.txt)
   --resume              Resume from previous crawl state
@@ -110,6 +151,53 @@ optional arguments:
 ```
 
 ## Output Format
+
+### Console Output
+
+The crawler displays real-time progress with depth tracking:
+
+```
+================================================================================
+PDF CRAWLER
+================================================================================
+Starting URL: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P170019
+Domain: www.accessdata.fda.gov
+Max pages: 200
+Min depth: 2 levels
+Delay: 1.0s
+Output: pdf_links.txt
+================================================================================
+
+[1/200] [Depth 0] Crawling: https://www.accessdata.fda.gov/.../pma.cfm?id=P170019
+  ✓ PDF: https://www.accessdata.fda.gov/cdrh_docs/pdf17/p170019b.pdf
+  → Found: 1 PDFs, 15 new pages (will be depth 1)
+
+[DEPTH] Reached depth level 1
+
+[2/200] [Depth 1] Crawling: https://www.accessdata.fda.gov/.../pma.cfm?id=P170019S001
+  ✓ PDF: https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S001B.pdf
+  → Found: 1 PDFs, 3 new pages (will be depth 2)
+
+[DEPTH] Reached depth level 2
+...
+
+================================================================================
+CRAWL COMPLETE
+================================================================================
+Pages crawled: 45
+Pages visited: 45
+PDFs found: 87
+Max depth reached: 3 levels
+Min depth required: 2 levels
+✓ Minimum depth requirement satisfied
+Queue remaining: 12
+
+Results saved to: pdf_links.txt
+State saved to: crawler_state.json
+================================================================================
+```
+
+### PDF Links File
 
 The crawler generates a text file with all discovered PDF links:
 

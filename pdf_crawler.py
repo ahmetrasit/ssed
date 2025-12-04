@@ -3,18 +3,19 @@
 PDF Link Crawler - Extracts all PDF links from a website
 
 This script crawls a website, visits all pages within the same domain,
-and extracts links to PDF files. Perfect for finding all FDA SSED documents
-or other PDF resources on a website.
+and extracts links to PDF files. It tracks depth levels to ensure thorough
+exploration (default: at least 2 levels deep). Perfect for finding all FDA
+SSED documents or other PDF resources on a website.
 
 Usage:
     python3 pdf_crawler.py <starting_url> [options]
 
 Examples:
-    # Crawl FDA PMA database for PDFs
+    # Crawl FDA PMA database for PDFs (at least 2 levels deep)
     python3 pdf_crawler.py "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P170019" --max-pages 100
 
-    # Crawl with custom output file
-    python3 pdf_crawler.py "https://example.com" --output my_pdfs.txt --max-pages 50
+    # Crawl with custom output file and minimum depth
+    python3 pdf_crawler.py "https://example.com" --output my_pdfs.txt --min-depth 3
 
     # Resume from previous crawl
     python3 pdf_crawler.py "https://example.com" --resume crawl_state.json
@@ -41,7 +42,7 @@ class PDFCrawler:
     """Web crawler that extracts PDF links from websites"""
 
     def __init__(self, start_url, max_pages=200, delay=1.0, output_file="pdf_links.txt",
-                 resume_file=None, same_domain_only=True):
+                 resume_file=None, same_domain_only=True, min_depth=2):
         """
         Initialize the PDF crawler
 
@@ -52,6 +53,7 @@ class PDFCrawler:
             output_file: File to save PDF links
             resume_file: File to save/load crawler state for resuming
             same_domain_only: Only crawl pages on the same domain
+            min_depth: Minimum depth to crawl (default: 2 levels deep)
         """
         self.start_url = start_url
         self.max_pages = max_pages
@@ -59,6 +61,7 @@ class PDFCrawler:
         self.output_file = output_file
         self.resume_file = resume_file or "crawler_state.json"
         self.same_domain_only = same_domain_only
+        self.min_depth = min_depth
 
         # Parse domain from start URL
         parsed = urlparse(start_url)
@@ -68,8 +71,10 @@ class PDFCrawler:
         # State tracking
         self.visited_urls = set()
         self.pdf_links = set()
-        self.to_visit = deque([start_url])
+        self.to_visit = deque([(start_url, 0)])  # Store (URL, depth) tuples
         self.pages_crawled = 0
+        self.url_depths = {}  # Track depth of each URL
+        self.max_depth_reached = 0
 
         # Session for connection reuse
         self.session = requests.Session()
@@ -116,10 +121,10 @@ class PDFCrawler:
 
         return links
 
-    def crawl_page(self, url):
+    def crawl_page(self, url, depth):
         """Crawl a single page and extract links"""
         try:
-            print(f"[{self.pages_crawled}/{self.max_pages}] Crawling: {url}")
+            print(f"[{self.pages_crawled}/{self.max_pages}] [Depth {depth}] Crawling: {url}")
 
             response = self.session.get(url, timeout=30, allow_redirects=True)
             response.raise_for_status()
@@ -147,7 +152,9 @@ class PDFCrawler:
             'visited_urls': list(self.visited_urls),
             'pdf_links': list(self.pdf_links),
             'to_visit': list(self.to_visit),
-            'pages_crawled': self.pages_crawled
+            'pages_crawled': self.pages_crawled,
+            'url_depths': self.url_depths,
+            'max_depth_reached': self.max_depth_reached
         }
 
         with open(self.resume_file, 'w') as f:
@@ -163,13 +170,24 @@ class PDFCrawler:
 
             self.visited_urls = set(state['visited_urls'])
             self.pdf_links = set(state['pdf_links'])
-            self.to_visit = deque(state['to_visit'])
+
+            # Convert to_visit back to deque of tuples
+            to_visit_list = state['to_visit']
+            if to_visit_list and isinstance(to_visit_list[0], list):
+                self.to_visit = deque([tuple(item) for item in to_visit_list])
+            else:
+                # Legacy format - assume depth 0 for old state files
+                self.to_visit = deque([(url, 0) for url in to_visit_list])
+
             self.pages_crawled = state['pages_crawled']
+            self.url_depths = state.get('url_depths', {})
+            self.max_depth_reached = state.get('max_depth_reached', 0)
 
             print(f"[RESUME] Loaded state from {self.resume_file}")
             print(f"  - Visited: {len(self.visited_urls)} pages")
             print(f"  - Found: {len(self.pdf_links)} PDFs")
             print(f"  - Queue: {len(self.to_visit)} pages")
+            print(f"  - Max depth reached: {self.max_depth_reached}")
 
         except FileNotFoundError:
             print(f"[INFO] No resume file found, starting fresh")
@@ -198,15 +216,21 @@ class PDFCrawler:
         print(f"Starting URL: {self.start_url}")
         print(f"Domain: {self.domain}")
         print(f"Max pages: {self.max_pages}")
+        print(f"Min depth: {self.min_depth} levels")
         print(f"Delay: {self.delay}s")
         print(f"Output: {self.output_file}")
         print("=" * 80)
         print()
 
         try:
-            while self.to_visit and self.pages_crawled < self.max_pages:
-                # Get next URL to visit
-                current_url = self.to_visit.popleft()
+            while self.to_visit:
+                # Check if we can stop (max pages reached AND min depth satisfied)
+                if self.pages_crawled >= self.max_pages and self.max_depth_reached >= self.min_depth:
+                    print(f"\n[INFO] Reached max pages ({self.max_pages}) and min depth ({self.min_depth})")
+                    break
+
+                # Get next URL to visit (with depth)
+                current_url, current_depth = self.to_visit.popleft()
 
                 # Skip if already visited
                 if current_url in self.visited_urls:
@@ -219,13 +243,20 @@ class PDFCrawler:
                 # Mark as visited
                 self.visited_urls.add(current_url)
                 self.pages_crawled += 1
+                self.url_depths[current_url] = current_depth
+
+                # Update max depth reached
+                if current_depth > self.max_depth_reached:
+                    self.max_depth_reached = current_depth
+                    print(f"\n[DEPTH] Reached depth level {current_depth}")
 
                 # Crawl the page
-                links = self.crawl_page(current_url)
+                links = self.crawl_page(current_url, current_depth)
 
                 # Process extracted links
                 pdf_count = 0
                 page_count = 0
+                next_depth = current_depth + 1
 
                 for link in links:
                     if self.is_pdf_link(link):
@@ -236,13 +267,16 @@ class PDFCrawler:
                             print(f"  ✓ PDF: {link}")
                     else:
                         # Add to crawl queue if not visited
-                        if link not in self.visited_urls and link not in self.to_visit:
-                            if not self.same_domain_only or self.is_same_domain(link):
-                                self.to_visit.append(link)
-                                page_count += 1
+                        if link not in self.visited_urls:
+                            # Check if already in queue
+                            already_queued = any(url == link for url, _ in self.to_visit)
+                            if not already_queued:
+                                if not self.same_domain_only or self.is_same_domain(link):
+                                    self.to_visit.append((link, next_depth))
+                                    page_count += 1
 
                 if pdf_count > 0 or page_count > 0:
-                    print(f"  → Found: {pdf_count} PDFs, {page_count} new pages")
+                    print(f"  → Found: {pdf_count} PDFs, {page_count} new pages (will be depth {next_depth})")
 
                 # Be respectful - delay between requests
                 time.sleep(self.delay)
@@ -267,6 +301,12 @@ class PDFCrawler:
             print(f"Pages crawled: {self.pages_crawled}")
             print(f"Pages visited: {len(self.visited_urls)}")
             print(f"PDFs found: {len(self.pdf_links)}")
+            print(f"Max depth reached: {self.max_depth_reached} levels")
+            print(f"Min depth required: {self.min_depth} levels")
+            if self.max_depth_reached >= self.min_depth:
+                print(f"✓ Minimum depth requirement satisfied")
+            else:
+                print(f"⚠ Did not reach minimum depth (only reached {self.max_depth_reached})")
             print(f"Queue remaining: {len(self.to_visit)}")
             print(f"\nResults saved to: {self.output_file}")
             print(f"State saved to: {self.resume_file}")
@@ -296,6 +336,8 @@ Examples:
     parser.add_argument('url', help='Starting URL to crawl')
     parser.add_argument('--max-pages', type=int, default=200,
                        help='Maximum number of pages to crawl (default: 200)')
+    parser.add_argument('--min-depth', type=int, default=2,
+                       help='Minimum depth to crawl in levels (default: 2)')
     parser.add_argument('--delay', type=float, default=1.0,
                        help='Delay between requests in seconds (default: 1.0)')
     parser.add_argument('--output', default='pdf_links.txt',
@@ -313,6 +355,7 @@ Examples:
     crawler = PDFCrawler(
         start_url=args.url,
         max_pages=args.max_pages,
+        min_depth=args.min_depth,
         delay=args.delay,
         output_file=args.output,
         resume_file=args.resume_file,
