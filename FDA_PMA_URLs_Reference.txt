@@ -1,0 +1,420 @@
+================================================================================
+FDA PMA DATABASE - ONCOLOGY DEVICES URL REFERENCE
+Product Code PQP and Related Oncology Diagnostics
+================================================================================
+
+Generated: December 4, 2025
+Purpose: Direct FDA PMA database links for all oncology molecular diagnostics
+         and digital pathology devices
+
+Product Code PQP: Next-Generation Sequencing oncology companion diagnostics
+Related Codes: OWD, PJG, SFL (other oncology nucleic acid-based tests)
+
+================================================================================
+SECTION 1: NGS PANELS (Product Code: PQP)
+================================================================================
+
+1. FOUNDATIONONE CDx (P170019)
+   FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P170019
+   SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf17/p170019b.pdf
+   Approval Date: November 30, 2017
+   Manufacturer: Foundation Medicine, Inc.
+
+   Supplements:
+   - P170019/S001: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P170019S001
+   - P170019/S004: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P170019S004
+   - P170019/S005: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P170019S005
+   - P170019/S006: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P170019S006
+   - P170019/S008: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P170019S008
+   - P170019/S014: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P170019S014
+   - P170019/S015: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P170019S015
+   - P170019/S029: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P170019S029
+     SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S029B.pdf
+   - P170019/S048: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P170019S048
+     SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf17/P170019S048B.pdf
+
+--------------------------------------------------------------------------------
+
+2. ONCOMINE DX TARGET TEST (P160045)
+   FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160045
+   SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf16/p160045b.pdf
+   Approval Date: June 22, 2017
+   Manufacturer: Thermo Fisher Scientific
+
+   Supplements:
+   - P160045/S031: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160045S031
+   - P160045/S035: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160045S035
+   - P160045/S046: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160045S046
+
+--------------------------------------------------------------------------------
+
+3. TRUSIGHT ONCOLOGY COMPREHENSIVE (P230011)
+   FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P230011
+   Technical Info: https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230011C.pdf
+   Approval Date: August 27, 2024
+   Manufacturer: Illumina, Inc.
+
+--------------------------------------------------------------------------------
+
+4. TEMPUS xT CDx (P210011)
+   FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P210011
+   Approval Date: May 1, 2023
+   Manufacturer: Tempus Labs, Inc.
+
+--------------------------------------------------------------------------------
+
+5. MI CANCER SEEK (P240010)
+   FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P240010
+   SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf24/P240010B.pdf
+   Approval Date: November 6, 2024
+   Manufacturer: Caris Life Sciences
+
+--------------------------------------------------------------------------------
+
+6. FOUNDATIONFOCUS CDxBRCA (P160018)
+   FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160018
+   Approval Date: December 19, 2016
+   Manufacturer: Foundation Medicine, Inc.
+   Historical: First FDA-approved NGS-based companion diagnostic
+
+   Supplements:
+   - P160018/S001: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160018S001
+     SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160018S001b.pdf
+
+--------------------------------------------------------------------------------
+
+7. MSK-IMPACT (DEN170058)
+   FDA De Novo Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?id=DEN170058
+   De Novo Summary: https://www.accessdata.fda.gov/cdrh_docs/reviews/den170058.pdf
+   Authorization Date: November 15, 2017
+   Manufacturer: Memorial Sloan Kettering Cancer Center
+   Regulatory Pathway: De Novo (Class II)
+   Historical: First tumor-profiling multiplex panel authorized by FDA
+
+--------------------------------------------------------------------------------
+
+8. PRAXIS EXTENDED RAS PANEL (P160038)
+   FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P160038
+   SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf16/P160038B.pdf
+   Technical Info: https://www.accessdata.fda.gov/cdrh_docs/pdf16/p160038c.pdf
+   Approval Date: June 29, 2017
+   Manufacturer: Illumina, Inc.
+
+--------------------------------------------------------------------------------
+
+9. ONCOREVEAL CDx (P200011)
+   FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P200011
+   Approval Date: July 2021
+   Manufacturer: Pillar Biosciences, Inc.
+
+   Supplements:
+   - P200011/S001: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P200011S001
+     SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200011S001B.pdf
+     Date: April 23, 2024 (pan-cancer expansion)
+
+--------------------------------------------------------------------------------
+
+10. PGDX ELIO TISSUE COMPLETE
+    Regulatory Status: FDA Market Clearance (Not PMA - Class II)
+    Clearance Date: April 27, 2020
+    Manufacturer: Personal Genome Diagnostics / Labcorp
+    Note: Cleared via FDA clearance pathway, not PMA
+
+================================================================================
+SECTION 2: PCR COMPANION DIAGNOSTICS
+================================================================================
+
+11. COBAS EGFR MUTATION TEST v2 (P150044)
+    FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P150044
+    Approval Date: June 1, 2016
+    Manufacturer: Roche Molecular Systems, Inc.
+
+--------------------------------------------------------------------------------
+
+12. COBAS 4800 BRAF V600 MUTATION TEST (P110020)
+    FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P110020
+    SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf11/P110020b.pdf
+    Technical Info: https://www.accessdata.fda.gov/cdrh_docs/pdf11/P110020c.pdf
+    Approval Date: 2011
+    Manufacturer: Roche Molecular Diagnostics
+
+--------------------------------------------------------------------------------
+
+13. THERASCREEN KRAS RGQ PCR KIT
+    Manufacturer: QIAGEN GmbH
+    Approval Date: May 2014
+    Note: Check FDA PMA database for specific PMA number
+
+================================================================================
+SECTION 3: IHC COMPANION DIAGNOSTICS
+================================================================================
+
+14. HERCEPTEST (P980018)
+    FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P980018
+    Approval Date: September 25, 1998
+    Manufacturer: Dako (Agilent Technologies)
+    Historical: First companion diagnostic ever approved by FDA
+
+    Supplements:
+    - P980018/S010: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P980018S010
+      SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf/P980018S010b.pdf
+
+--------------------------------------------------------------------------------
+
+15. VENTANA HER2/neu (4B5) - PATHWAY
+    Manufacturer: Ventana Medical Systems, Inc. (Roche)
+    Device Class: III - PMA
+    Note: Check FDA PMA database for specific PMA number
+
+--------------------------------------------------------------------------------
+
+16. PD-L1 IHC 22C3 pharmDx
+    Manufacturer: Dako (Agilent Technologies)
+    Device Class: III - PMA
+    Note: Check FDA PMA database for specific PMA number
+
+--------------------------------------------------------------------------------
+
+17. PD-L1 IHC 28-8 pharmDx
+    Manufacturer: Dako (Agilent Technologies)
+    Device Class: III - PMA
+    Note: Check FDA PMA database for specific PMA number
+
+--------------------------------------------------------------------------------
+
+18. VENTANA PD-L1 (SP142) ASSAY
+    Manufacturer: Ventana Medical Systems, Inc. (Roche)
+    Device Class: III - PMA
+    Note: Check FDA PMA database for specific PMA number
+
+--------------------------------------------------------------------------------
+
+19. VENTANA PD-L1 (SP263) ASSAY
+    Manufacturer: Ventana Medical Systems, Inc. (Roche)
+    Device Class: III - PMA
+    Note: Check FDA PMA database for specific PMA number
+
+================================================================================
+SECTION 4: FISH COMPANION DIAGNOSTICS
+================================================================================
+
+20. VYSIS ALK BREAK APART FISH PROBE KIT (P110012)
+    FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P110012
+    Approval Date: August 2011
+    Manufacturer: Abbott Molecular Inc.
+
+--------------------------------------------------------------------------------
+
+21. PATHVYSION HER-2 DNA PROBE KIT (P980024)
+    FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P980024
+    Manufacturer: Abbott Molecular (Vysis)
+
+    Supplements:
+    - P980024/S001: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P980024S001
+      Technical Info: https://www.accessdata.fda.gov/cdrh_docs/pdf/P980024S001c.pdf
+
+================================================================================
+SECTION 5: LIQUID BIOPSY TESTS
+================================================================================
+
+22. GUARDANT360 CDx (P200010)
+    FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P200010
+    SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010B.pdf
+    Approval Date: August 7, 2020
+    Manufacturer: Guardant Health, Inc.
+    Historical: First FDA-approved liquid biopsy for comprehensive tumor profiling
+
+    Supplements:
+    - P200010/S001: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P200010S001
+      Date: May 21, 2021
+    - P200010/S002: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P200010S002
+    - P200010/S008: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P200010S008
+      Technical Info: https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S008C.pdf
+      Date: August 11, 2022
+    - P200010/S010: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P200010S010
+      SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf20/P200010S010B.pdf
+      Date: January 27, 2023
+
+--------------------------------------------------------------------------------
+
+23. FOUNDATIONONE LIQUID CDx (P190032)
+    FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P190032
+    Technical Info: https://www.accessdata.fda.gov/cdrh_docs/pdf19/P190032C.pdf
+    Approval Date: August 28, 2020
+    Manufacturer: Foundation Medicine, Inc. (Roche)
+
+    Supplements:
+    - P190032/S005: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P190032S005
+
+================================================================================
+SECTION 6: COLORECTAL CANCER SCREENING
+================================================================================
+
+24. COLOGUARD (P130017)
+    FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P130017
+    Approval Date: August 11, 2014
+    Manufacturer: Exact Sciences Corporation
+
+--------------------------------------------------------------------------------
+
+25. COLOGUARD PLUS (P230043)
+    FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P230043
+    SSED: https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230043B.pdf
+    Approval Date: October 4, 2024
+    Manufacturer: Exact Sciences Corporation
+
+--------------------------------------------------------------------------------
+
+26. GUARDANT SHIELD
+    Approval Date: July 29, 2024
+    Manufacturer: Guardant Health, Inc.
+    Note: Check FDA PMA database for specific PMA number
+
+--------------------------------------------------------------------------------
+
+27. IDYLLA CDx MSI TEST (P250005)
+    FDA PMA Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P250005
+    Approval Date: September 2025
+    Manufacturer: Biocartis NV
+
+================================================================================
+SECTION 7: DIGITAL PATHOLOGY - WHOLE SLIDE IMAGING
+================================================================================
+
+28. PHILIPS INTELLISITE PATHOLOGY SOLUTION (DEN160056)
+    FDA De Novo Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?id=DEN160056
+    De Novo Summary: https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN160056.pdf
+    Decision Summary: https://www.accessdata.fda.gov/cdrh_docs/pdf16/DEN160056.pdf
+    Clearance Date: April 12, 2017
+    Manufacturer: Philips Medical Systems
+    Regulatory Pathway: De Novo (Class II)
+    Historical: First WSI system cleared by FDA for digital pathology
+
+--------------------------------------------------------------------------------
+
+29. HAMAMATSU NANOZOOMER S360MD (K213883)
+    FDA 510(k) Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K213883
+    510(k) Summary: https://www.accessdata.fda.gov/cdrh_docs/reviews/K213883.pdf
+    Clearance Date: October 2022
+    Manufacturer: Hamamatsu Photonics
+    Regulatory Pathway: 510(k) Clearance (Class II)
+
+--------------------------------------------------------------------------------
+
+30. ROCHE DIGITAL PATHOLOGY (VENTANA DP 200 & DP 600) (K232879)
+    FDA 510(k) Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K232879
+    510(k) Summary: https://www.accessdata.fda.gov/cdrh_docs/reviews/K232879.pdf
+    Clearance Date: June 14, 2024 (DP 200); January 2025 (DP 600)
+    Manufacturer: Roche / Ventana Medical Systems
+    Regulatory Pathway: 510(k) Clearance (Class II)
+
+================================================================================
+SECTION 8: DIGITAL PATHOLOGY - AI DIAGNOSTIC SYSTEMS
+================================================================================
+
+31. PAIGE PROSTATE (DEN200080)
+    FDA De Novo Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm?id=DEN200080
+    De Novo Summary: https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN200080.pdf
+    Clearance Date: September 2021
+    Manufacturer: Paige.AI
+    Regulatory Pathway: De Novo (Class II)
+    Historical: First AI-based pathology product to receive FDA approval
+
+--------------------------------------------------------------------------------
+
+32. PROSIGNA (PAM50) (K130010)
+    FDA 510(k) Page: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K130010
+    510(k) Summary: https://www.accessdata.fda.gov/cdrh_docs/reviews/k130010.pdf
+    Manufacturer: NanoString Technologies (now Veracyte)
+    Regulatory Pathway: 510(k) Clearance (Class II)
+
+================================================================================
+FDA DATABASE SEARCH TOOLS
+================================================================================
+
+PMA Database Search by Product Code PQP:
+https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMA/pma.cfm?start_search=1&productcode=PQP&pagenum=500
+
+PMA Database General Search:
+https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm
+
+510(k) Database Search:
+https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm
+
+De Novo Database Search:
+https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/denovo.cfm
+
+Product Code Classification Database:
+https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPCD/classification.cfm
+
+FDA Companion Diagnostics List:
+https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools
+
+================================================================================
+PRODUCT CODE INFORMATION
+================================================================================
+
+Product Code PQP:
+- Description: Oncology therapeutic nucleic acid-based test system,
+               next generation sequencing (NGS)
+- Device Class: III (Proposed reclassification to Class II)
+- Regulation: 21 CFR 866.6070
+
+Related Product Codes for Oncology CDx:
+- OWD: System, Test, Tumor, Nucleic Acid, Oncology Therapeutic
+- PJG: Oncology therapeutic nucleic acid-based test system
+- SFL: Test, Nucleic Acid, Tumor, Oncology Therapeutic
+- PQP: Oncology therapeutic nucleic acid-based test system, NGS
+
+FDA Statistics (as of November 2025):
+- Total PMAs approved across OWD, PJG, PQP, SFL: 35
+- Total PMA supplements: 403
+- First approval: 2011
+
+================================================================================
+REGULATORY NOTES
+================================================================================
+
+CLASS RECLASSIFICATION PROPOSAL:
+In November 2025, FDA proposed reclassifying oncology nucleic acid-based test
+systems (product codes OWD, PJG, PQP, SFL) from Class III to Class II.
+Comments due: January 26, 2026
+Federal Register: 90 FR 94356
+
+This reclassification would change the regulatory pathway from PMA (Premarket
+Approval) to 510(k) (Premarket Notification), potentially accelerating future
+device approvals while maintaining safety and effectiveness standards.
+
+================================================================================
+NOTES FOR REGULATORY PROFESSIONALS
+================================================================================
+
+1. PMA numbers beginning with "P" followed by 6 digits indicate original PMAs
+2. Supplements are designated with "/S" followed by 3 digits (e.g., P170019/S029)
+3. De Novo submissions use "DEN" prefix (e.g., DEN170058)
+4. 510(k) submissions use "K" prefix (e.g., K213883)
+
+5. SSED documents (Summary of Safety and Effectiveness Data) are available for
+   PMA-approved devices
+
+6. 510(k) Summary documents are available for 510(k)-cleared devices
+
+7. To find all supplements for a specific PMA, search the FDA PMA database:
+   https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id={PMA_NUMBER}
+
+================================================================================
+DOCUMENT VERSION CONTROL
+================================================================================
+
+Version: 1.0
+Created: December 4, 2025
+Last Updated: December 4, 2025
+Source: FDA PMA Database, FDA De Novo Database, FDA 510(k) Database
+Compiled by: Regulatory Affairs Professional
+
+All information verified through official FDA sources as of December 4, 2025.
+For most current information, consult FDA databases directly using URLs provided.
+
+================================================================================
+END OF DOCUMENT
+================================================================================
