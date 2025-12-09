@@ -1,0 +1,891 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SSED Framework v4 - Subsection Sheets Schema",
+  "description": "Defines all subsection sheets with their columns. Each sheet is extracted as a separate JSON array file.",
+  "version": "4.3.0",
+  "created": "2025-12-06",
+  "updated": "2025-12-06",
+
+  "extraction_rules": {
+    "full_text_sheets": ["2.1_intended_use_statement", "10.1_warnings_and_precautions", "10.2_contraindications"],
+    "full_text_description": "These sheets contain verbatim text from the SSED. Do NOT add source_summary column.",
+    "summary_sheets_description": "All other sheets MUST include a 'source_summary' column containing a brief summary of the source paragraph(s) from which the row data was extracted."
+  },
+
+  "sheets": {
+    "1.1_device_name_and_classification": {
+      "title": "Device Name and Classification",
+      "ssed_section": "I",
+      "cardinality": "single",
+      "columns": {
+        "proprietary_name": {"type": "string", "required": true},
+        "established_name": {"type": "string", "required": true},
+        "common_name": {"type": "string", "required": false},
+        "device_class": {"type": "string", "enum": ["II", "III"], "required": true},
+        "product_code": {"type": "string", "required": true},
+        "regulation_number": {"type": "string", "required": false},
+        "submission_type": {"type": "string", "enum": ["PMA", "PMA_supplement", "510(k)", "De Novo"], "required": true},
+        "submission_number": {"type": "string", "required": true},
+        "approval_date": {"type": "string", "format": "date", "required": true}
+      }
+    },
+
+    "1.2_manufacturer_information": {
+      "title": "Manufacturer Information",
+      "ssed_section": "I",
+      "cardinality": "single",
+      "columns": {
+        "manufacturer_name": {"type": "string", "required": true},
+        "manufacturer_address": {"type": "string", "required": true},
+        "facility_registration": {"type": "string", "required": false},
+        "contact_person": {"type": "string", "required": false},
+        "contact_phone": {"type": "string", "required": false}
+      }
+    },
+
+    "1.3_device_description": {
+      "title": "Device Description",
+      "ssed_section": "I, V",
+      "cardinality": "single",
+      "columns": {
+        "technology_platform": {"type": "string", "required": true},
+        "detection_method": {"type": "string", "required": true},
+        "automation_level": {"type": "string", "enum": ["manual", "semi-automated", "fully-automated"], "required": false},
+        "testing_location": {"type": "string", "enum": ["CLIA-certified laboratory", "point-of-care", "home-use"], "required": true},
+        "single_site_or_distributed": {"type": "string", "enum": ["single-site", "distributed"], "required": false}
+      }
+    },
+
+    "2.1_intended_use_statement": {
+      "title": "Intended Use Statement",
+      "ssed_section": "II",
+      "cardinality": "single",
+      "columns": {
+        "intended_use_text": {"type": "string", "required": true},
+        "qualitative_quantitative": {"type": "string", "enum": ["qualitative", "quantitative", "semi-quantitative"], "required": true}
+      }
+    },
+
+    "2.2_target_biomarkers": {
+      "title": "Target Biomarkers",
+      "ssed_section": "II",
+      "cardinality": "multiple",
+      "columns": {
+        "biomarker_name": {"type": "string", "required": true},
+        "biomarker_type": {"type": "string", "enum": ["gene", "mutation", "protein", "fusion", "amplification", "expression", "methylation"], "required": true},
+        "gene_symbol": {"type": "string", "required": false},
+        "variant_type": {"type": "string", "enum": ["SNV", "indel", "CNV", "fusion", "structural", "all"], "required": false},
+        "specific_variants": {"type": "string", "required": false, "note": "Comma-separated list if multiple"},
+        "cdx_category": {"type": "string", "enum": ["CDx_Level1", "analytical_only", "tumor_profiling"], "required": true},
+        "clinical_significance": {"type": "string", "required": true}
+      }
+    },
+
+    "2.3_associated_therapeutics": {
+      "title": "Associated Therapeutics (CDx Claims)",
+      "ssed_section": "II",
+      "cardinality": "multiple",
+      "columns": {
+        "therapeutic_name": {"type": "string", "required": true},
+        "therapeutic_manufacturer": {"type": "string", "required": false},
+        "therapeutic_nda_bla": {"type": "string", "required": false},
+        "therapeutic_class": {"type": "string", "required": false},
+        "mechanism_of_action": {"type": "string", "required": false},
+        "approved_indication": {"type": "string", "required": true},
+        "cancer_type": {"type": "string", "required": true},
+        "line_of_therapy": {"type": "string", "required": false},
+        "biomarker_tested": {"type": "string", "required": true},
+        "cdx_labeling_requirement": {"type": "string", "enum": ["required", "recommended", "informational"], "required": true},
+        "therapeutic_approval_date": {"type": "string", "format": "date", "required": false}
+      }
+    },
+
+    "2.4_patient_population": {
+      "title": "Patient Population",
+      "ssed_section": "II",
+      "cardinality": "single",
+      "columns": {
+        "disease_condition": {"type": "string", "required": true},
+        "disease_stage": {"type": "string", "required": false},
+        "histology": {"type": "string", "required": false},
+        "prior_therapy_status": {"type": "string", "required": false},
+        "age_range": {"type": "string", "required": false},
+        "excluded_populations": {"type": "string", "required": false, "note": "Comma-separated list"}
+      }
+    },
+
+    "3.1_approved_specimen_types": {
+      "title": "Approved Specimen Types",
+      "ssed_section": "V",
+      "cardinality": "multiple",
+      "columns": {
+        "specimen_type": {"type": "string", "required": true},
+        "collection_method": {"type": "string", "required": true},
+        "collection_container": {"type": "string", "required": false},
+        "preservative": {"type": "string", "required": false},
+        "minimum_volume": {"type": "number", "required": false},
+        "optimal_volume": {"type": "number", "required": false},
+        "volume_unit": {"type": "string", "required": false},
+        "minimum_tumor_content_percent": {"type": "number", "required": false},
+        "minimum_nucleic_acid_input_ng": {"type": "number", "required": false}
+      }
+    },
+
+    "3.2_specimen_stability": {
+      "title": "Specimen Stability",
+      "ssed_section": "V, IX",
+      "cardinality": "multiple",
+      "columns": {
+        "specimen_type": {"type": "string", "required": true},
+        "storage_condition": {"type": "string", "required": true},
+        "temperature_min_c": {"type": "number", "required": false},
+        "temperature_max_c": {"type": "number", "required": false},
+        "stability_duration": {"type": "string", "required": true},
+        "stability_duration_hours": {"type": "number", "required": false},
+        "freeze_thaw_cycles": {"type": "integer", "required": false}
+      }
+    },
+
+    "3.3_rejection_criteria": {
+      "title": "Specimen Rejection Criteria",
+      "ssed_section": "V",
+      "cardinality": "multiple",
+      "columns": {
+        "criterion": {"type": "string", "required": true},
+        "criterion_category": {"type": "string", "enum": ["volume", "quality", "labeling", "transport", "contamination", "other"], "required": false}
+      }
+    },
+
+    "4.1_accuracy_concordance": {
+      "title": "Accuracy/Concordance",
+      "ssed_section": "IX.A",
+      "cardinality": "multiple",
+      "columns": {
+        "target_biomarker": {"type": "string", "required": true},
+        "reference_method": {"type": "string", "required": true},
+        "specimen_type": {"type": "string", "required": false},
+        "n_positive_samples": {"type": "integer", "required": true},
+        "n_negative_samples": {"type": "integer", "required": true},
+        "n_total_samples": {"type": "integer", "required": false},
+        "ppa_value": {"type": "number", "required": true},
+        "ppa_ci_lower": {"type": "number", "required": true},
+        "ppa_ci_upper": {"type": "number", "required": true},
+        "npa_value": {"type": "number", "required": true},
+        "npa_ci_lower": {"type": "number", "required": true},
+        "npa_ci_upper": {"type": "number", "required": true},
+        "opa_value": {"type": "number", "required": false},
+        "discordant_count": {"type": "integer", "required": false},
+        "discordant_analysis": {"type": "string", "required": false}
+      }
+    },
+
+    "4.2.1_repeatability": {
+      "title": "Precision - Repeatability (Within-Run)",
+      "ssed_section": "IX.A",
+      "cardinality": "multiple",
+      "columns": {
+        "target_biomarker": {"type": "string", "required": true},
+        "sample_id": {"type": "string", "required": false},
+        "sample_level": {"type": "string", "required": true, "note": "e.g., low positive, high positive, negative"},
+        "target_vaf_percent": {"type": "number", "required": false},
+        "n_replicates": {"type": "integer", "required": true},
+        "n_detected": {"type": "integer", "required": false},
+        "agreement_rate_percent": {"type": "number", "required": false},
+        "mean_value": {"type": "number", "required": false},
+        "sd": {"type": "number", "required": false},
+        "cv_percent": {"type": "number", "required": false}
+      }
+    },
+
+    "4.2.2_within_laboratory_precision": {
+      "title": "Precision - Within-Laboratory",
+      "ssed_section": "IX.A",
+      "cardinality": "multiple",
+      "columns": {
+        "target_biomarker": {"type": "string", "required": true},
+        "sample_level": {"type": "string", "required": true},
+        "n_days": {"type": "integer", "required": true},
+        "n_runs_per_day": {"type": "integer", "required": true},
+        "n_replicates_per_run": {"type": "integer", "required": true},
+        "n_operators": {"type": "integer", "required": false},
+        "n_instruments": {"type": "integer", "required": false},
+        "agreement_rate_percent": {"type": "number", "required": false},
+        "sd": {"type": "number", "required": false},
+        "cv_percent": {"type": "number", "required": false}
+      }
+    },
+
+    "4.2.3_reproducibility": {
+      "title": "Precision - Reproducibility (Multi-Site)",
+      "ssed_section": "IX.A",
+      "cardinality": "multiple",
+      "columns": {
+        "target_biomarker": {"type": "string", "required": true},
+        "sample_level": {"type": "string", "required": true},
+        "n_sites": {"type": "integer", "required": true},
+        "n_operators_per_site": {"type": "integer", "required": false},
+        "n_instruments": {"type": "integer", "required": false},
+        "n_reagent_lots": {"type": "integer", "required": false},
+        "n_days": {"type": "integer", "required": false},
+        "agreement_rate_percent": {"type": "number", "required": false},
+        "sd": {"type": "number", "required": false},
+        "cv_percent": {"type": "number", "required": false}
+      }
+    },
+
+    "4.3.1_limit_of_blank": {
+      "title": "Limit of Blank (LoB)",
+      "ssed_section": "IX.A",
+      "cardinality": "single",
+      "columns": {
+        "lob_value": {"type": "number", "required": true},
+        "lob_unit": {"type": "string", "required": true},
+        "alpha": {"type": "number", "required": false, "default": 0.05},
+        "n_blank_samples": {"type": "integer", "required": true},
+        "n_replicates": {"type": "integer", "required": false},
+        "method": {"type": "string", "enum": ["parametric", "nonparametric"], "required": true}
+      }
+    },
+
+    "4.3.2_limit_of_detection": {
+      "title": "Limit of Detection (LoD)",
+      "ssed_section": "IX.A",
+      "cardinality": "multiple",
+      "columns": {
+        "target_biomarker": {"type": "string", "required": true},
+        "variant_type": {"type": "string", "required": false},
+        "specimen_type": {"type": "string", "required": false},
+        "lod_value": {"type": "number", "required": true},
+        "lod_unit": {"type": "string", "required": true, "note": "e.g., % VAF, % MAF, copies/mL"},
+        "detection_rate_percent": {"type": "number", "required": false, "default": 95},
+        "method": {"type": "string", "enum": ["classical", "precision_profile", "probit", "hit_rate"], "required": false},
+        "n_samples": {"type": "integer", "required": false},
+        "n_replicates": {"type": "integer", "required": false},
+        "ci_lower": {"type": "number", "required": false},
+        "ci_upper": {"type": "number", "required": false}
+      }
+    },
+
+    "4.4_cross_reactivity": {
+      "title": "Analytical Specificity - Cross-Reactivity",
+      "ssed_section": "IX.A",
+      "cardinality": "multiple",
+      "columns": {
+        "target_tested": {"type": "string", "required": true},
+        "potential_cross_reactant": {"type": "string", "required": true},
+        "concentration_tested": {"type": "string", "required": false},
+        "result": {"type": "string", "enum": ["no_cross_reactivity", "cross_reactivity_detected"], "required": true},
+        "percent_cross_reactivity": {"type": "number", "required": false}
+      }
+    },
+
+    "4.5_interference_testing": {
+      "title": "Interference Testing",
+      "ssed_section": "IX.A",
+      "cardinality": "multiple",
+      "columns": {
+        "interferent_name": {"type": "string", "required": true},
+        "interferent_type": {"type": "string", "enum": ["endogenous", "exogenous", "drug", "metabolite"], "required": true},
+        "concentration_tested": {"type": "number", "required": true},
+        "concentration_unit": {"type": "string", "required": true},
+        "physiological_max": {"type": "number", "required": false},
+        "sample_level": {"type": "string", "enum": ["low", "high", "both"], "required": false},
+        "result": {"type": "string", "enum": ["no_interference", "interference_detected"], "required": true},
+        "percent_difference": {"type": "number", "required": false},
+        "acceptance_criteria": {"type": "string", "required": false}
+      }
+    },
+
+    "5.1_clinical_study_design": {
+      "title": "Clinical Study Design",
+      "ssed_section": "X",
+      "cardinality": "multiple",
+      "note": "One row per clinical study",
+      "columns": {
+        "study_name": {"type": "string", "required": true},
+        "nct_number": {"type": "string", "required": false},
+        "study_type": {"type": "string", "enum": ["prospective", "retrospective", "prospective-retrospective"], "required": true},
+        "study_phase": {"type": "string", "enum": ["I", "II", "III", "IV", "not_applicable"], "required": false},
+        "study_population": {"type": "string", "required": true},
+        "enrollment_criteria_summary": {"type": "string", "required": false},
+        "n_enrolled": {"type": "integer", "required": true},
+        "n_evaluable": {"type": "integer", "required": true},
+        "primary_endpoint": {"type": "string", "required": false},
+        "data_cutoff_date": {"type": "string", "format": "date", "required": false}
+      }
+    },
+
+    "5.2_clinical_sensitivity_specificity": {
+      "title": "Clinical Sensitivity/Specificity",
+      "ssed_section": "X",
+      "cardinality": "multiple",
+      "columns": {
+        "target_biomarker": {"type": "string", "required": true},
+        "comparator_method": {"type": "string", "required": false},
+        "specimen_type": {"type": "string", "required": false},
+        "clinical_sensitivity": {"type": "number", "required": true},
+        "sensitivity_ci_lower": {"type": "number", "required": true},
+        "sensitivity_ci_upper": {"type": "number", "required": true},
+        "clinical_specificity": {"type": "number", "required": true},
+        "specificity_ci_lower": {"type": "number", "required": true},
+        "specificity_ci_upper": {"type": "number", "required": true},
+        "n_true_positives": {"type": "integer", "required": false},
+        "n_false_positives": {"type": "integer", "required": false},
+        "n_true_negatives": {"type": "integer", "required": false},
+        "n_false_negatives": {"type": "integer", "required": false},
+        "ppv": {"type": "number", "required": false},
+        "npv": {"type": "number", "required": false}
+      }
+    },
+
+    "5.3_clinical_outcomes": {
+      "title": "Clinical Outcomes",
+      "ssed_section": "X",
+      "cardinality": "multiple",
+      "columns": {
+        "study_name": {"type": "string", "required": false},
+        "endpoint": {"type": "string", "required": true, "note": "e.g., ORR, PFS, OS, DOR"},
+        "cdx_positive_value": {"type": "number", "required": false},
+        "cdx_positive_ci_lower": {"type": "number", "required": false},
+        "cdx_positive_ci_upper": {"type": "number", "required": false},
+        "cdx_positive_n": {"type": "integer", "required": false},
+        "cdx_negative_value": {"type": "number", "required": false},
+        "cdx_negative_ci_lower": {"type": "number", "required": false},
+        "cdx_negative_ci_upper": {"type": "number", "required": false},
+        "cdx_negative_n": {"type": "integer", "required": false},
+        "hazard_ratio": {"type": "number", "required": false},
+        "hr_ci_lower": {"type": "number", "required": false},
+        "hr_ci_upper": {"type": "number", "required": false},
+        "p_value": {"type": "number", "required": false}
+      }
+    },
+
+    "5.4_bridging_studies": {
+      "title": "Bridging Studies",
+      "ssed_section": "X",
+      "cardinality": "multiple",
+      "columns": {
+        "bridging_from": {"type": "string", "required": true, "note": "Reference assay"},
+        "bridging_to": {"type": "string", "required": true, "note": "CDx assay"},
+        "specimen_type": {"type": "string", "required": false},
+        "n_samples": {"type": "integer", "required": true},
+        "concordance_ppa": {"type": "number", "required": true},
+        "concordance_npa": {"type": "number", "required": true},
+        "concordance_opa": {"type": "number", "required": false}
+      }
+    },
+
+    "6.1_reagent_components": {
+      "title": "Reagent Components",
+      "ssed_section": "V",
+      "cardinality": "multiple",
+      "columns": {
+        "component_name": {"type": "string", "required": true},
+        "catalog_number": {"type": "string", "required": false},
+        "storage_condition": {"type": "string", "required": true},
+        "storage_temperature_c": {"type": "string", "required": false},
+        "shelf_life": {"type": "string", "required": false},
+        "open_vial_stability": {"type": "string", "required": false}
+      }
+    },
+
+    "6.2_instrumentation": {
+      "title": "Instrumentation",
+      "ssed_section": "V",
+      "cardinality": "multiple",
+      "columns": {
+        "instrument_name": {"type": "string", "required": true},
+        "instrument_type": {"type": "string", "required": true},
+        "manufacturer": {"type": "string", "required": true},
+        "model_number": {"type": "string", "required": false},
+        "software_version": {"type": "string", "required": false},
+        "regulatory_status": {"type": "string", "required": false}
+      }
+    },
+
+    "6.3_controls": {
+      "title": "Controls and Calibrators",
+      "ssed_section": "V",
+      "cardinality": "multiple",
+      "columns": {
+        "control_type": {"type": "string", "enum": ["positive", "negative", "internal", "calibrator", "low_positive", "no_template"], "required": true},
+        "control_name": {"type": "string", "required": true},
+        "target_value": {"type": "string", "required": false},
+        "acceptable_range": {"type": "string", "required": false},
+        "frequency": {"type": "string", "required": true}
+      }
+    },
+
+    "7.1_software_description": {
+      "title": "Software Description",
+      "ssed_section": "V",
+      "cardinality": "single",
+      "columns": {
+        "software_name": {"type": "string", "required": true},
+        "software_version": {"type": "string", "required": true},
+        "software_function": {"type": "string", "required": true},
+        "algorithm_type": {"type": "string", "enum": ["rule-based", "ML", "AI", "hybrid"], "required": false},
+        "locked_algorithm": {"type": "boolean", "required": false}
+      }
+    },
+
+    "7.2_bioinformatics_pipeline": {
+      "title": "Bioinformatics Pipeline",
+      "ssed_section": "V",
+      "cardinality": "single",
+      "columns": {
+        "pipeline_name": {"type": "string", "required": false},
+        "pipeline_version": {"type": "string", "required": false},
+        "reference_genome": {"type": "string", "enum": ["GRCh37", "GRCh38", "hg19", "hg38"], "required": false},
+        "alignment_tool": {"type": "string", "required": false},
+        "variant_caller": {"type": "string", "required": false},
+        "annotation_databases": {"type": "string", "required": false, "note": "Comma-separated list"}
+      }
+    },
+
+    "8.1_reagent_stability": {
+      "title": "Reagent Stability",
+      "ssed_section": "IX",
+      "cardinality": "multiple",
+      "columns": {
+        "reagent_name": {"type": "string", "required": true},
+        "study_type": {"type": "string", "enum": ["real-time", "accelerated"], "required": true},
+        "storage_condition": {"type": "string", "required": true},
+        "storage_temperature_c": {"type": "string", "required": false},
+        "claimed_shelf_life": {"type": "string", "required": true},
+        "study_duration": {"type": "string", "required": true},
+        "result": {"type": "string", "enum": ["stable", "degradation_observed"], "required": true},
+        "ppa_at_end": {"type": "number", "required": false},
+        "npa_at_end": {"type": "number", "required": false}
+      }
+    },
+
+    "9.1_identified_hazards": {
+      "title": "Identified Hazards",
+      "ssed_section": "XII",
+      "cardinality": "multiple",
+      "columns": {
+        "hazard_id": {"type": "string", "required": true},
+        "hazard_description": {"type": "string", "required": true},
+        "hazardous_situation": {"type": "string", "required": true},
+        "potential_harm": {"type": "string", "required": true},
+        "severity": {"type": "string", "enum": ["negligible", "minor", "serious", "critical", "catastrophic"], "required": false},
+        "probability": {"type": "string", "enum": ["improbable", "remote", "occasional", "probable", "frequent"], "required": false},
+        "risk_level": {"type": "string", "enum": ["acceptable", "ALARP", "unacceptable"], "required": false},
+        "control_measure": {"type": "string", "required": false},
+        "residual_risk": {"type": "string", "enum": ["acceptable", "ALARP"], "required": false}
+      }
+    },
+
+    "9.2_benefit_risk_assessment": {
+      "title": "Benefit-Risk Assessment",
+      "ssed_section": "XII",
+      "cardinality": "single",
+      "columns": {
+        "clinical_benefits": {"type": "string", "required": true},
+        "residual_risks_summary": {"type": "string", "required": true},
+        "benefit_risk_conclusion": {"type": "string", "required": true}
+      }
+    },
+
+    "10.1_warnings_and_precautions": {
+      "title": "Warnings and Precautions",
+      "ssed_section": "IV",
+      "cardinality": "multiple",
+      "columns": {
+        "type": {"type": "string", "enum": ["warning", "precaution", "limitation"], "required": true},
+        "text": {"type": "string", "required": true}
+      }
+    },
+
+    "10.2_contraindications": {
+      "title": "Contraindications",
+      "ssed_section": "III",
+      "cardinality": "multiple",
+      "columns": {
+        "contraindication_text": {"type": "string", "required": true}
+      }
+    },
+
+    "11.1_conditions_of_approval": {
+      "title": "Conditions of Approval",
+      "ssed_section": "XIII",
+      "cardinality": "multiple",
+      "columns": {
+        "condition_number": {"type": "string", "required": true},
+        "condition_text": {"type": "string", "required": true},
+        "due_date": {"type": "string", "format": "date", "required": false},
+        "timeline": {"type": "string", "required": false},
+        "completion_status": {"type": "string", "enum": ["pending", "in_progress", "submitted", "accepted"], "required": false}
+      }
+    },
+
+    "11.2_post_approval_studies": {
+      "title": "Post-Approval Studies",
+      "ssed_section": "XIII",
+      "cardinality": "multiple",
+      "columns": {
+        "study_requirement": {"type": "string", "required": true},
+        "study_objective": {"type": "string", "required": true},
+        "timeline": {"type": "string", "required": false},
+        "status": {"type": "string", "enum": ["planned", "ongoing", "completed"], "required": false}
+      }
+    },
+
+    "ext_ngs_sequencing_parameters": {
+      "title": "NGS Sequencing Parameters",
+      "ssed_section": "V",
+      "cardinality": "single",
+      "applies_to": "NGS-based devices",
+      "columns": {
+        "sequencing_platform": {"type": "string", "required": true},
+        "sequencing_chemistry": {"type": "string", "required": false},
+        "read_length": {"type": "integer", "required": false},
+        "paired_end": {"type": "boolean", "required": false},
+        "mean_depth": {"type": "number", "required": false},
+        "min_depth_threshold": {"type": "integer", "required": false},
+        "panel_size_kb": {"type": "number", "required": false},
+        "genes_covered": {"type": "integer", "required": false},
+        "q30_threshold_percent": {"type": "number", "required": false},
+        "on_target_rate_percent": {"type": "number", "required": false},
+        "uniformity_percent": {"type": "number", "required": false}
+      }
+    },
+
+    "ext_cdx_therapeutic_linkage": {
+      "title": "CDx Therapeutic Linkage",
+      "ssed_section": "II, X",
+      "cardinality": "multiple",
+      "applies_to": "Companion diagnostics",
+      "columns": {
+        "therapeutic_product_name": {"type": "string", "required": true},
+        "therapeutic_nda_bla": {"type": "string", "required": false},
+        "therapeutic_manufacturer": {"type": "string", "required": false},
+        "labeling_section_reference": {"type": "string", "required": false},
+        "label_concordance_verified": {"type": "boolean", "required": false},
+        "co_development": {"type": "boolean", "required": false},
+        "coordinated_review": {"type": "boolean", "required": false}
+      }
+    },
+
+    "ext_cdx_clinical_trial": {
+      "title": "CDx Clinical Trial Integration",
+      "ssed_section": "X",
+      "cardinality": "multiple",
+      "applies_to": "Companion diagnostics",
+      "columns": {
+        "trial_nct_number": {"type": "string", "required": false},
+        "trial_name": {"type": "string", "required": true},
+        "trial_phase": {"type": "string", "enum": ["I", "II", "III", "IV"], "required": false},
+        "cdx_role": {"type": "string", "enum": ["enrollment_selection", "stratification", "response_prediction", "safety_monitoring"], "required": true},
+        "primary_endpoint": {"type": "string", "required": false},
+        "cdx_positive_n": {"type": "integer", "required": false},
+        "cdx_negative_n": {"type": "integer", "required": false},
+        "source_summary": {"type": "string", "required": true}
+      }
+    },
+
+    "4.6_carryover_contamination": {
+      "title": "Carryover and Contamination",
+      "ssed_section": "IX.A",
+      "cardinality": "single",
+      "columns": {
+        "carryover_tested": {"type": "boolean", "required": true},
+        "carryover_study_design": {"type": "string", "required": false},
+        "high_sample_concentration": {"type": "string", "required": false},
+        "low_sample_concentration": {"type": "string", "required": false},
+        "carryover_result": {"type": "string", "enum": ["no_carryover", "carryover_detected"], "required": false},
+        "carryover_rate_percent": {"type": "number", "required": false},
+        "contamination_controls": {"type": "string", "required": false},
+        "source_summary": {"type": "string", "required": true}
+      }
+    },
+
+    "4.7_input_range": {
+      "title": "Input Range Studies",
+      "ssed_section": "IX.A",
+      "cardinality": "multiple",
+      "columns": {
+        "analyte": {"type": "string", "required": true, "note": "e.g., DNA, cfDNA, RNA"},
+        "specimen_type": {"type": "string", "required": false},
+        "lower_limit": {"type": "number", "required": true},
+        "upper_limit": {"type": "number", "required": true},
+        "unit": {"type": "string", "required": true, "note": "e.g., ng, ng/uL"},
+        "optimal_input": {"type": "number", "required": false},
+        "performance_at_lower_limit": {"type": "string", "required": false},
+        "performance_at_upper_limit": {"type": "string", "required": false},
+        "source_summary": {"type": "string", "required": true}
+      }
+    },
+
+    "4.8_robustness_guardbanding": {
+      "title": "Robustness and Guardbanding",
+      "ssed_section": "IX.A",
+      "cardinality": "multiple",
+      "columns": {
+        "parameter_tested": {"type": "string", "required": true},
+        "nominal_value": {"type": "string", "required": true},
+        "tested_range_low": {"type": "string", "required": true},
+        "tested_range_high": {"type": "string", "required": true},
+        "acceptance_criteria": {"type": "string", "required": false},
+        "result": {"type": "string", "enum": ["passed", "failed", "marginal"], "required": true},
+        "impact_on_performance": {"type": "string", "required": false},
+        "source_summary": {"type": "string", "required": true}
+      }
+    },
+
+    "5.5_demographics": {
+      "title": "Study Demographics",
+      "ssed_section": "X",
+      "cardinality": "multiple",
+      "note": "One row per study or per demographic category",
+      "columns": {
+        "study_name": {"type": "string", "required": false},
+        "population_type": {"type": "string", "required": false, "note": "e.g., CDx evaluable, ITT, safety"},
+        "total_n": {"type": "integer", "required": true},
+        "age_median": {"type": "number", "required": false},
+        "age_range_min": {"type": "number", "required": false},
+        "age_range_max": {"type": "number", "required": false},
+        "male_percent": {"type": "number", "required": false},
+        "female_percent": {"type": "number", "required": false},
+        "white_percent": {"type": "number", "required": false},
+        "black_percent": {"type": "number", "required": false},
+        "asian_percent": {"type": "number", "required": false},
+        "hispanic_percent": {"type": "number", "required": false},
+        "other_race_percent": {"type": "number", "required": false},
+        "ecog_0_percent": {"type": "number", "required": false},
+        "ecog_1_percent": {"type": "number", "required": false},
+        "ecog_2_plus_percent": {"type": "number", "required": false},
+        "source_summary": {"type": "string", "required": true}
+      }
+    },
+
+    "5.6_sample_accountability": {
+      "title": "Sample Accountability",
+      "ssed_section": "X",
+      "cardinality": "multiple",
+      "columns": {
+        "study_name": {"type": "string", "required": false},
+        "population_stage": {"type": "string", "required": true, "note": "e.g., enrolled, screened, randomized, evaluable"},
+        "n_count": {"type": "integer", "required": true},
+        "percent_of_enrolled": {"type": "number", "required": false},
+        "exclusion_reason": {"type": "string", "required": false},
+        "n_excluded_for_reason": {"type": "integer", "required": false},
+        "source_summary": {"type": "string", "required": true}
+      }
+    },
+
+    "5.7_subgroup_analyses": {
+      "title": "Subgroup Analyses",
+      "ssed_section": "X",
+      "cardinality": "multiple",
+      "columns": {
+        "study_name": {"type": "string", "required": false},
+        "subgroup_variable": {"type": "string", "required": true, "note": "e.g., age, gender, race, ECOG, histology"},
+        "subgroup_value": {"type": "string", "required": true},
+        "n_subgroup": {"type": "integer", "required": true},
+        "endpoint": {"type": "string", "required": true},
+        "result_value": {"type": "number", "required": false},
+        "result_ci_lower": {"type": "number", "required": false},
+        "result_ci_upper": {"type": "number", "required": false},
+        "comparison_to_overall": {"type": "string", "required": false},
+        "source_summary": {"type": "string", "required": true}
+      }
+    },
+
+    "6.4_assay_workflow": {
+      "title": "Assay Workflow",
+      "ssed_section": "V",
+      "cardinality": "multiple",
+      "columns": {
+        "step_number": {"type": "integer", "required": true},
+        "step_name": {"type": "string", "required": true},
+        "step_description": {"type": "string", "required": false},
+        "duration": {"type": "string", "required": false},
+        "temperature": {"type": "string", "required": false},
+        "equipment_used": {"type": "string", "required": false},
+        "critical_parameters": {"type": "string", "required": false},
+        "source_summary": {"type": "string", "required": true}
+      }
+    },
+
+    "6.5_turnaround_time": {
+      "title": "Turnaround Time",
+      "ssed_section": "V",
+      "cardinality": "single",
+      "columns": {
+        "total_tat": {"type": "string", "required": true},
+        "total_tat_hours": {"type": "number", "required": false},
+        "specimen_processing_time": {"type": "string", "required": false},
+        "analysis_time": {"type": "string", "required": false},
+        "reporting_time": {"type": "string", "required": false},
+        "hands_on_time": {"type": "string", "required": false},
+        "source_summary": {"type": "string", "required": true}
+      }
+    },
+
+    "6.6_report_content": {
+      "title": "Report Content",
+      "ssed_section": "V",
+      "cardinality": "multiple",
+      "columns": {
+        "report_element": {"type": "string", "required": true},
+        "element_description": {"type": "string", "required": false},
+        "required_or_optional": {"type": "string", "enum": ["required", "optional"], "required": false},
+        "source_summary": {"type": "string", "required": true}
+      }
+    },
+
+    "12.1_alternative_devices": {
+      "title": "Alternative Devices and Practices",
+      "ssed_section": "VI",
+      "cardinality": "multiple",
+      "columns": {
+        "device_name": {"type": "string", "required": true},
+        "manufacturer": {"type": "string", "required": false},
+        "regulatory_status": {"type": "string", "required": false, "note": "e.g., FDA-cleared, FDA-approved, LDT"},
+        "technology_type": {"type": "string", "required": false},
+        "indication": {"type": "string", "required": false},
+        "comparison_notes": {"type": "string", "required": false},
+        "source_summary": {"type": "string", "required": true}
+      }
+    },
+
+    "12.2_marketing_history": {
+      "title": "Marketing History",
+      "ssed_section": "VII",
+      "cardinality": "multiple",
+      "columns": {
+        "country_region": {"type": "string", "required": true},
+        "regulatory_status": {"type": "string", "required": true, "note": "e.g., approved, cleared, CE marked"},
+        "approval_date": {"type": "string", "format": "date", "required": false},
+        "regulatory_body": {"type": "string", "required": false},
+        "submission_number": {"type": "string", "required": false},
+        "units_distributed": {"type": "integer", "required": false},
+        "adverse_events_reported": {"type": "integer", "required": false},
+        "source_summary": {"type": "string", "required": true}
+      }
+    },
+
+    "12.3_potential_adverse_effects": {
+      "title": "Potential Adverse Effects",
+      "ssed_section": "VIII",
+      "cardinality": "multiple",
+      "columns": {
+        "adverse_effect": {"type": "string", "required": true},
+        "adverse_effect_category": {"type": "string", "required": false, "note": "e.g., false positive, false negative, delay in treatment"},
+        "potential_harm": {"type": "string", "required": true},
+        "likelihood": {"type": "string", "enum": ["rare", "uncommon", "common"], "required": false},
+        "severity": {"type": "string", "enum": ["minor", "moderate", "serious", "life-threatening"], "required": false},
+        "mitigation": {"type": "string", "required": false},
+        "source_summary": {"type": "string", "required": true}
+      }
+    },
+
+    "12.4_panel_recommendation": {
+      "title": "Panel Recommendation",
+      "ssed_section": "XI",
+      "cardinality": "single",
+      "columns": {
+        "panel_name": {"type": "string", "required": true},
+        "panel_meeting_date": {"type": "string", "format": "date", "required": false},
+        "panel_referred": {"type": "boolean", "required": true},
+        "referral_rationale": {"type": "string", "required": false, "note": "If not referred, explain why"},
+        "recommendation": {"type": "string", "enum": ["approval", "approval_with_conditions", "not_approvable", "not_applicable"], "required": false},
+        "vote_for": {"type": "integer", "required": false},
+        "vote_against": {"type": "integer", "required": false},
+        "vote_abstain": {"type": "integer", "required": false},
+        "key_panel_concerns": {"type": "string", "required": false},
+        "source_summary": {"type": "string", "required": true}
+      }
+    },
+
+    "12.5_fda_conclusions": {
+      "title": "FDA Conclusions",
+      "ssed_section": "XII",
+      "cardinality": "multiple",
+      "columns": {
+        "conclusion_category": {"type": "string", "required": true, "enum": ["analytical_performance", "clinical_performance", "benefit_risk", "labeling", "overall"]},
+        "conclusion_text": {"type": "string", "required": true},
+        "source_summary": {"type": "string", "required": true}
+      }
+    },
+
+    "12.6_references": {
+      "title": "References",
+      "ssed_section": "XV",
+      "cardinality": "multiple",
+      "columns": {
+        "reference_number": {"type": "integer", "required": false},
+        "citation": {"type": "string", "required": true},
+        "reference_type": {"type": "string", "enum": ["journal_article", "guidance_document", "standard", "package_insert", "other"], "required": false},
+        "relevance": {"type": "string", "required": false, "note": "What aspect of the submission does this support"}
+      }
+    },
+
+    "12.7_financial_disclosure": {
+      "title": "Financial Disclosure",
+      "ssed_section": "XIII",
+      "cardinality": "single",
+      "columns": {
+        "n_clinical_investigators": {"type": "integer", "required": false},
+        "n_with_disclosable_interests": {"type": "integer", "required": false},
+        "disclosure_types": {"type": "string", "required": false, "note": "Comma-separated: equity, compensation, proprietary, employment"},
+        "fda_analysis_performed": {"type": "boolean", "required": false},
+        "impact_on_study_reliability": {"type": "string", "required": false},
+        "source_summary": {"type": "string", "required": true}
+      }
+    },
+
+    "99_uncategorized": {
+      "title": "Uncategorized Information",
+      "ssed_section": "any",
+      "cardinality": "multiple",
+      "note": "Catch-all sheet for any SSED content that does not fit existing schema categories. Ensures 100% content coverage.",
+      "columns": {
+        "content_summary": {"type": "string", "required": true, "note": "Brief summary of the uncategorized content"},
+        "ssed_section": {"type": "string", "required": true, "note": "SSED section number where this content appears (e.g., 'IX.A', 'X.B')"},
+        "page_number": {"type": "integer", "required": false, "note": "Page number in the source SSED document"},
+        "content_type": {"type": "string", "required": false, "note": "e.g., table, figure, text, list"},
+        "potential_category": {"type": "string", "required": false, "note": "Suggested category if this should be added to schema in future"},
+        "verbatim_excerpt": {"type": "string", "required": false, "note": "Key verbatim text if short enough to include"},
+        "relevance": {"type": "string", "enum": ["high", "medium", "low"], "required": false, "note": "Importance for device evaluation"},
+        "extraction_notes": {"type": "string", "required": false, "note": "Any notes about why this was uncategorized"}
+      }
+    }
+  },
+
+  "sheet_groups": {
+    "device_info": ["1.1_device_name_and_classification", "1.2_manufacturer_information", "1.3_device_description"],
+    "indications": ["2.1_intended_use_statement", "2.2_target_biomarkers", "2.3_associated_therapeutics", "2.4_patient_population"],
+    "specimen": ["3.1_approved_specimen_types", "3.2_specimen_stability", "3.3_rejection_criteria"],
+    "analytical": ["4.1_accuracy_concordance", "4.2.1_repeatability", "4.2.2_within_laboratory_precision", "4.2.3_reproducibility", "4.3.1_limit_of_blank", "4.3.2_limit_of_detection", "4.4_cross_reactivity", "4.5_interference_testing", "4.6_carryover_contamination", "4.7_input_range", "4.8_robustness_guardbanding"],
+    "clinical": ["5.1_clinical_study_design", "5.2_clinical_sensitivity_specificity", "5.3_clinical_outcomes", "5.4_bridging_studies", "5.5_demographics", "5.6_sample_accountability", "5.7_subgroup_analyses"],
+    "device_description": ["6.1_reagent_components", "6.2_instrumentation", "6.3_controls", "6.4_assay_workflow", "6.5_turnaround_time", "6.6_report_content"],
+    "software": ["7.1_software_description", "7.2_bioinformatics_pipeline"],
+    "stability": ["8.1_reagent_stability"],
+    "risk": ["9.1_identified_hazards", "9.2_benefit_risk_assessment"],
+    "labeling": ["10.1_warnings_and_precautions", "10.2_contraindications"],
+    "post_market": ["11.1_conditions_of_approval", "11.2_post_approval_studies"],
+    "additional_sections": ["12.1_alternative_devices", "12.2_marketing_history", "12.3_potential_adverse_effects", "12.4_panel_recommendation", "12.5_fda_conclusions", "12.6_references", "12.7_financial_disclosure"],
+    "extensions": ["ext_ngs_sequencing_parameters", "ext_cdx_therapeutic_linkage", "ext_cdx_clinical_trial"],
+    "uncategorized": ["99_uncategorized"]
+  },
+
+  "file_naming_convention": {
+    "pattern": "{submission_number}/{sheet_id}.json",
+    "example": "P210040B/4.3.2_limit_of_detection.json"
+  },
+
+  "metadata_file": {
+    "name": "_metadata.json",
+    "columns": {
+      "submission_number": {"type": "string", "required": true},
+      "device_name": {"type": "string", "required": true},
+      "extraction_date": {"type": "string", "format": "date", "required": true},
+      "source_document": {"type": "string", "required": true},
+      "framework_version": {"type": "string", "required": true, "const": "4.3.0"},
+      "sheets_extracted": {"type": "array", "items": {"type": "string"}, "required": true}
+    }
+  }
+}
